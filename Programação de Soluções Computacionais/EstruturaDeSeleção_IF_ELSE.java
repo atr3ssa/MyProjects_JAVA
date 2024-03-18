@@ -1,9 +1,6 @@
-import javax.swing.JOptionPane;
 
-//pacote para que o usuário possa inserir dados
-
-public class EstruturaDeSeleção {
-    //Estrutura de seleção IF
+    import javax.swing.JOptionPane;
+    public class EstruturaDeSeleção_IF_ELSE {
    
     public static void main(String[]args) {
         // inserção de dados
@@ -18,8 +15,13 @@ public class EstruturaDeSeleção {
         //JOptionPane = Classe
         //showMessageDialog = mostrar mensagem (null, "aprovado", nota):
        
+        } else{
+            JOptionPane.showMessageDialog(null, "Reprovado com a nota :" + nota);
+           
         }
        
     }
    
 }
+    
+
