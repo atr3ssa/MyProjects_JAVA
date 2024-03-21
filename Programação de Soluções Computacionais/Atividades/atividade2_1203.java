@@ -9,6 +9,7 @@ public class atividade2_1203 {
         nome = entrada10.nextLine();
         
         System.out.println("Já sei o seu nome! É: " + nome);
+        System.exit(0);
     }
     
 }
