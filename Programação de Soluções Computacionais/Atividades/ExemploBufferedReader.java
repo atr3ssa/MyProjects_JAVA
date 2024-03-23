@@ -25,14 +25,6 @@ public class ExemploBufferedReader {
 
     }
 
-    private static Object InputStreamReader(InputStream in) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'InputStreamReader'");
-    }
 
-    private String readLine() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'readLine'");
-    }
     
 }
