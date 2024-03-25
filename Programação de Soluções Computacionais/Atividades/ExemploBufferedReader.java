@@ -9,7 +9,7 @@ public class ExemploBufferedReader {
         double totaleleitores;
         //criação de um BufferedReader para ler a entrada do Console;
         
-        BufferedReader reader = new BufferedReader(new InputStreamReader (System.in));
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader (System.in)));
 
             System.out.println("Digite o Total de eleitores presentes: ");
             totaleleitores = Double.parseDouble(reader.readLine());
@@ -21,11 +21,16 @@ public class ExemploBufferedReader {
             totalb = Integer.parseInt(reader.readLine());
 
             System.out.println( "A porcentagem dos votos são: " + "Candidato A = " + (totala* (totaleleitores / 100) + "%"));
+    } catch  (Exception e) {
+
+        System.err.println("Erro ao ler a entrada do usuário: "  + e.getMessage());
+
+    }
         
-        System.exit(0);
+        
 
     }
 
 
     
-}
+
