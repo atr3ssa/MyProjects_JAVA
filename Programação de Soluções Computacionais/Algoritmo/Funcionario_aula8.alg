@@ -3,7 +3,7 @@ algoritmo "Funcionario"
 // Quantidade de dependentes de um funcionário
 var
  nome: caracter
- salario: real
+ salario, Nsalario: real
  D: inteiro
 
 inicio
@@ -18,13 +18,17 @@ inicio
       Leia(D)
       Escolha D
              Caso 0
-             Caso 1
-             caso 2
-             caso 3
-             Caso 4
-             Caso 5
-             
-
+                  Nsalario <- salario + (salario*5/100)
+             Caso 1, 2, 3
+                  Nsalario <- salario + (salario*10/100)
+             Caso 4, 5, 6
+                  Nsalario <- salario + (salario*15/100)
+             Outrocaso
+                      Nsalario <- salario + (salario*20/100)
+      FimEscolha
+      Escreval("-*-*-*-*-*-STATUS*-*-*-*-*-*-*-")
+      Escreval("PARABÉNS!")
+      Escreval(" Sr(a) ", nome, " por ter ", D, " dependentes o seu novo salário será de: R$", Nsalario:4:2, " REAIS")
       Escreval("-*-*-*-*-*-*-*-*-*-*-*-*-")
 
 fimalgoritmo
