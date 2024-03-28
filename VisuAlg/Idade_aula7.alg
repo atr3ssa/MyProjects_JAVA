@@ -1,20 +1,28 @@
 algoritmo "Idade"
-      //Creuza não sabe quantas velinhas tem que estar no seu bolo de aniversário
+      //Aula prática 1, Estruturas Condicionais
 var
-      nascimento, ano, v: inteiro
+      nascimento, ano, idade: inteiro
 
 inicio
       Escreval("Digite o ano que nasceu: ")
       Leia(nascimento)
+      
       Escreval("Digite em que ano você está: ")
       Leia (ano)
-      v <- (ano - nascimento)
-      Escreval("No ano de", ano, " você estará com ", v, " anos de idade")
-      Se (v >= 21) Entao
       
-      Escreval("E você já é de maior!")
+      idade <- (ano - nascimento)
       
+      Escreva("No ano de", ano, " você estará com ", idade, " anos de idade")
+      
+      Se (idade >= 21) Entao
+         Escreval(" e você já será de maior!")
+      senao
+         Escreva(" e você será de menor!")
       FimSe
+      
+
+      
+
 
 
 
