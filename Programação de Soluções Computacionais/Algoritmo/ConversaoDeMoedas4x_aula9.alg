@@ -5,16 +5,15 @@ algoritmo "ConversaoDeMoedas4x"
 
 var
       //declaração de variável
-      Reais, Dolar:real
-      C:inteiro
+      R, D, C:real
 
 inicio
-      C <- 0
+      C <- 1
       Enquanto (C <= 4) faca
-                        Escreval("Qual o valor em R$: ")
-                        Leia(Reais)
-                        Dolar <- Reais/4.89
-                        Escreval("Você receberá U$: ", Dolar:4:2, " dólares")
-                        C <- C + 1
+               Escreval("Qual o valor em R$: ")
+               Leia(R)
+               D <- R / 4.89
+               Escreval("Você receberá U$: ", D:4:2, " dólares")
+               C <- C + 1
       FimEnquanto
 fimalgoritmo
