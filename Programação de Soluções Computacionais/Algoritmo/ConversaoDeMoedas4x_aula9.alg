@@ -1,19 +1,21 @@
 algoritmo "ConversaoDeMoedas4x"
       //Enquanto, FOR
-
-
+      //Quantas conversões o usuário escolher
 
 var
-      //declaração de variável
-      R, D, C:real
+      dolar, moedareal: real
+      contador, conversao: inteiro
 
 inicio
-      C <- 1
-      Enquanto (C <= 4) faca
-               Escreval("Qual o valor em R$: ")
-               Leia(R)
-               D <- R / 4.89
-               Escreval("Você receberá U$: ", D:4:2, " dólares")
-               C <- C + 1
+      contador <- 1
+      conversao <- 0
+      Escreval("Quantas conversões você precisa? ")
+      Leia(conversao)
+      Enquanto (contador <= conversao) faca
+      Escreval("Olá, pode me dizer quantos reais você tem? ")
+      Leia(moedareal)
+      dolar <- (moedareal/4.98)
+      Escreval("Maravilha! Com R$ ", moedareal, " reais, você consegue comprar US$ ", dolar:4:2, " dólares")
+      contador <- contador + 1
       FimEnquanto
 fimalgoritmo
