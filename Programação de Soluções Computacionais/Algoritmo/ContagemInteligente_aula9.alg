@@ -1,29 +1,39 @@
 algoritmo "ContagemInteligente"
       //Enquanto, FOR
       //identificar um valor inicial e um final, então fazer uma sequência automatica, independente se for crescente ou decrescente
-
+      //exercicio sugerido 1
 
 var
-    n_inicial, n_final, contador, n_inicial2: inteiro
+    numero_inicial, numero_final: inteiro
 
 inicio
-      n_inicial <- 0
-      n_inicial2 <- 0
-      n_final <- 0
+      numero_inicial <- 0
+      numero_final <- 0
+      Escreval("--------------------")
       Escreval("CONTAGEM INTELIGÊNTE")
       Escreval("--------------------")
-      Escreval("Início: ")
-      Leia(n_inicial)
-      Escreval("Fim: ")
-      Leia(n_final)
+      Escreval("Inicio:")
+      Leia(numero_inicial)
+      Escreval("Fim:")
+      Leia(numero_final)
       Escreval("----------------")
       Escreval("C O N T A N D O")
       Escreval("----------------")
+      Se (numero_inicial < numero_final) entao
+         Enquanto (numero_inicial < numero_final)faca
+                                 numero_inicial <- numero_inicial + 1
+                                 Escreval(numero_inicial)
+         FimEnquanto
+         senao
+              Se(numero_inicial > numero_final) entao
+                                Enquanto (numero_inicial > numero_final)faca
+                                         numero_inicial <- numero_inicial - 1
+                                         Escreval(numero_inicial)
+                                FimEnquanto
+              senao
+                   Escreval("Você digitou o mesmo número, por isso não há uma sequencia!")
 
-      Enquanto (n_inicial < n_final)faca
-                         n_inicial <- n_inicial + 1
-                         Escreval(n_inicial)
-
-      FimEnquanto
+              FimSe
+      FimSe
 
 fimalgoritmo
