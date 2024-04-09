@@ -9,15 +9,14 @@ var
       nota_aluno, maior_nota: real
 
 inicio
-      contador <- 0
+      contador <- 1
       maior_nota <- 0
       Escreval("--------------------")
       Escreval("  ESCOLA CAJUZINHO  ")
       Escreval("--------------------")
       Escreval("Quantos alunos a turma tem?")
       leia(total_alunos)
-      Enquanto ( contador < total_alunos )faca
-               contador <- contador + 1
+      Enquanto ( contador <= total_alunos )faca
                Escreval("ALUNO ", contador)
                Escreval("Nome do aluno: ")
                Leia(nome_aluno)
@@ -32,6 +31,8 @@ inicio
                                                                maior_nota <- nota_aluno
                                                                //maior nota recebe a nota do aluno
                                                  FimSe
+               contador <- contador + 1
+               //ATENÇÃO
       FimEnquanto
                  Escreval("O melhor aproveitamento foi de ",melhor_aluno, " com nota: ", maior_nota)
 

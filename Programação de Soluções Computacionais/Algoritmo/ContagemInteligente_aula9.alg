@@ -4,11 +4,10 @@ algoritmo "ContagemInteligente"
       //exercicio sugerido 1
 
 var
-    numero_inicial, numero_final: inteiro
+    numero_inicial, numero_final, contador: inteiro
 
 inicio
-      numero_inicial <- 0
-      numero_final <- 0
+      contador <- 0
       Escreval("--------------------")
       Escreval("CONTAGEM INTELIGÊNTE")
       Escreval("--------------------")
@@ -19,19 +18,24 @@ inicio
       Escreval("----------------")
       Escreval("C O N T A N D O")
       Escreval("----------------")
-      Se (numero_inicial < numero_final) entao
-         Enquanto (numero_inicial < numero_final)faca
-                                 numero_inicial <- numero_inicial + 1
-                                 Escreval(numero_inicial)
+      Se (numero_final > numero_inicial) entao
+         contador <- numero_inicial
+
+         Enquanto (contador <= numero_final)faca
+                  Escreval(contador,"..")
+                  contador <- contador + 1
+                  //por no final
+
          FimEnquanto
          senao
-              Se(numero_inicial > numero_final) entao
-                                Enquanto (numero_inicial > numero_final)faca
-                                         numero_inicial <- numero_inicial - 1
-                                         Escreval(numero_inicial)
+              Se(numero_inicial >= numero_final) entao
+                                contador <- numero_inicial
+                                Enquanto (Contador > numero_final)faca
+                                          Escreval(contador,"..")
+                                          contador <- contador - 1
+
                                 FimEnquanto
-              senao
-                   Escreval("Você digitou o mesmo número, por isso não há uma sequencia!")
+
 
               FimSe
       FimSe
