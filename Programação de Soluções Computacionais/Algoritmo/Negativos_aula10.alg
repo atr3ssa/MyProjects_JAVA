@@ -1,32 +1,27 @@
-algoritmo "1a10"
+algoritmo "Negativos"
       //Repita, while
-      //exercicio proposto
-      //contar de 1 a 10
-      //exibir a tabuada de um número qualquer
+      //exercicio proposto 2
+      //deixar que o usuario insira x quantidades de números e depois saia o resultado da quantidade de negativos
+      //Quantos números são negativos?
 
 var
-      contador, numero, soma: inteiro
-
-
+   numero, contador, quant_negativos, quantidade: inteiro
 
 inicio
       contador <- 1
-      Escreva(" Escolha um número e veja a tabuada: ")
-       Leia(numero)
-       Repita
-             Escreval(numero, " X", contador, " =", soma)
-             contador <- contador + 1
-             soma <- numero * contador
-             //resultado = n x contador
-       ate(contador > 10)
-      //Enquanto (contador <= 10)faca
-               //Escreva(contador)
-               //contador <- contador + 1
-      //FimEnquanto
-      //Repita
-      //Inverso do Enquanto
-            //Escreva(contador)
-            //contador <- contador + 1
-      //ate(contador > 10)
+      quant_negativos <- 0
+      Escreva("Quantos números deseja inserir: ")
+      leia(quantidade)
+      repita
+            Escreva("Digite um número: ")
+            Leia(numero)
+            Se (numero < 0) entao
+               quant_negativos <- quant_negativos + 1
+               // quant_negativos = quant_negativos(0) + 1
+            FimSe
+            contador <- contador + 1
+      ate(contador > quantidade)
+      Escreva("A quantidade de números negativos digitados é de: ", quant_negativos, " número(s) negativo(s)!")
+
 
 fimalgoritmo
