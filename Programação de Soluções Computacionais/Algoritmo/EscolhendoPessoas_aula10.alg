@@ -25,21 +25,26 @@ Repita
       Escreval("[3] Loiro")
       Escreval("[4] Ruivo")
       leia(cabelo)
-      Escolha (cabelo)
-              caso 1
+      //Escolha (cabelo)
+      //Dá p fazer sem o EscolhaCaso também
+              //caso 1
                //não ocorra nada
-              caso 2
-                   Se(sexo = "M") e (idade >= 18) entao
+              //caso 2
+                   Se(sexo = "M") e (idade >= 18) e (cabelo = 2) entao
                            h18_castanho <- h18_castanho + 1
+                   senao
+                        Se (sexo = "F") e (idade >= 25) e (idade <= 30) e (cabelo = 3) entao
+                            m2530_loiro <- m2530_loiro + 1
+                        FimSe
                    FimSe
 
-              caso 3
-                   Se(sexo = "F") e (idade >= 25) e (idade <= 30) entao
-                           m2530_loiro <- m2530_loiro + 1
-                   FimSe
-              caso 4
+              //caso 3
+                   //Se(sexo = "F") e (idade >= 25) e (idade <= 30) entao
+                           //m2530_loiro <- m2530_loiro + 1
+                   //FimSe
+              //caso 4
               //não ocorra nada
-      FimEscolha
+      //FimEscolha
       Escreva("Quer continuar (S/N)? ")
       leia(resposta)
       limpatela
@@ -49,6 +54,4 @@ Escreval("   RESULTADO FINAL   ")
 Escreval("=====================")
 Escreval("Total de homens com mais de 18 e cabelos castanhos: ", h18_castanho)
 Escreval("Total de mulheres entre 25 e 30 com cabelos loiros: ", m2530_loiro)
-      
-
 fimalgoritmo
