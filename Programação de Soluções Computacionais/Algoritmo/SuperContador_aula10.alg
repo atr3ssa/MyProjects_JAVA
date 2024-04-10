@@ -16,19 +16,24 @@ inicio
       Escreval("| [3] Sair      |")
       Escreval("=================")
       Leia(numero)
-      contador <- 0
-      Escolha
-             caso numero = 1
+      Escolha (numero)
+             caso 1
+                  contador <- 0
                   Repita
-                        contador <- 1
-                        Escreva(contador)
                         contador <- contador + 1
-                  ate(contador > numero)
+                        Escreva(contador, "..")
+                  ate(contador >= 10)
              caso 2
+                  contador <- 11
                   repita
-                  ate()
+                        contador <- contador - 1
+                        Escreva(contador, "..")
+                  ate(contador <= 1)
              caso 3
                   limpatela
                   Escreval("SAINDO...")
+             outrocaso
+                      limpatela
+                      Escreval("Número inválido!")
       FimEscolha
 fimalgoritmo
