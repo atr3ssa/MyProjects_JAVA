@@ -10,6 +10,7 @@ var
 
 inicio
 repita
+      Escreval(" ")
       Escreval("=================")
       Escreval("|    M E N U    |")
       Escreval("=================")
@@ -25,14 +26,14 @@ repita
                            contador <- contador + 1
                            Escreva(contador, "..")
                      ate(contador >= 10)
-                     Escreval(" ")
+                     //Escreval(" ")
                 caso 2
                      contador <- 11
                      repita
                            contador <- contador - 1
                            Escreva(contador, "..")
                      ate(contador <= 1)
-                     Escreval(" ")
+                     //Escreval(" ")
                 caso 3
                      Escreval("SAINDO...")
                 outrocaso
