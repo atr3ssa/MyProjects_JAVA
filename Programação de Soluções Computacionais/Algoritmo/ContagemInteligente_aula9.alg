@@ -22,7 +22,7 @@ inicio
          contador <- numero_inicial
 
          Enquanto (contador <= numero_final)faca
-                  Escreval(contador,"..")
+                  Escreva(contador,"..")
                   contador <- contador + 1
                   //por no final
 
