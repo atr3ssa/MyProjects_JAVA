@@ -16,12 +16,12 @@ inicio
       soma <- 0
       contador <- 1
       media <- 0
-      Para contador <- 1 ate 6 faca
+      Para contador <- 1 ate 5 faca
            Escreva("Digite o ", contador, "° valor: ")
            leia(valor)
            soma <- soma + valor
-           media <- (soma / 6)
-           Se(valor % 5 = 0) e (valor <> 0)entao
+           media <- (soma / 5)
+           Se(valor % 5 = 0)entao
                divisivel <- divisivel + 1
            FimSe
                Se(valor % 2 = 0)entao
