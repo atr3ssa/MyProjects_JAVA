@@ -4,14 +4,17 @@ algoritmo "SequenciaFIBONACCI"
    // Ecercicio proposto 1
 
 var
-      contador, fibonacci: inteiro
+      contador, fibonacci, a, b: inteiro
 
 inicio
-      fibonacci <- 1
-      Para contador := 1 ate 15 faca
-           Escreva(contador)
-           contador <- contador + (-1)
-
+      a <- 0
+      Escreva(a)
+      b <- 1
+      Escreva(b)
+      Para contador := 3 ate 15 faca
+         fibonacci := a + b
+         Escreva(fibonacci)
+         a := b
+         b := a
       FimPara
-
 fimalgoritmo
