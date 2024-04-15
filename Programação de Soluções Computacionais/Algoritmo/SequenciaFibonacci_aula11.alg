@@ -16,7 +16,7 @@ inicio
       fibonacci <- 0
       contador <- 0
       //soma de dois numeros ( T1 + T2 )
-      Enquanto (contador < 15)faca
+      aEnquanto (contador < 15)faca
       //Para contador <- 1 ate 15 faca
       //Mostrar 15 vezes
          Escreva(fibonacci)
