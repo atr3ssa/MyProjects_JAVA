@@ -5,6 +5,7 @@ var
 numero: inteiro
 verificado: caractere
 Funcao ParOuImpar(N: inteiro): caractere
+//tipar a entrada( se é inteiro, real, caracter...) e tipar a saída também
 Inicio
       Se (N % 2 = 0) entao
         retorne "par!"
