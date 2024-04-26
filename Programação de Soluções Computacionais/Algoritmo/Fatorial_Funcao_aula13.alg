@@ -2,24 +2,35 @@ algoritmo "FatorialDeUmNumero"
  //Função, prática 3
  //Repita
 var
-numero, contador, fatorial, resultado: inteiro
-Funcao fatorialdeUmNumero (C, F: Inteiro): Inteiro
+numero, contador, resultado: inteiro
+
+Funcao fatorialdeUmNumero (N: Inteiro): Inteiro
+
+var
+C, fatorial: inteiro
+
 Inicio
-  Repita
-     F <- C * F
-     C <- C - 1
-  ate(C < 1)
-  retorne F
+
+  fatorial <- 1
+  para C <- 1 ate N faca
+    fatorial <- N * fatorial
+  FimPara
+  
+  //Repita
+    // F <- N * F
+     //C <- C - 1
+  //ate(C < 1)
+  retorne fatorial
 
 FimFuncao
 
 inicio
-contador <- 0
-fatorial <- 1
+//contador <- 0
+//fatorial <- 1
 Escreval("Digite um número:")
 Leia(numero)
-contador <- numero
-resultado <- FatorialDeUmNumero(contador, fatorial)
+//contador <- numero
+resultado <- FatorialDeUmNumero(numero)
 //Repita
   //fatorial <- contador * fatorial
   //contador <- contador - 1
