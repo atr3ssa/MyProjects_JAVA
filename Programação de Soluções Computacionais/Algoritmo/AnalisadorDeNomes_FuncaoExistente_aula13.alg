@@ -2,6 +2,7 @@ algoritmo "AnalisadorDeNomes"
 
 var
 nome, letra, resposta: Caractere
+C: inteiro
 
 
 inicio
@@ -20,6 +21,11 @@ inicio
       Escreval("Código 1° letra: ", Carac(Asc(Copia(nome,1,1))), " = ", Asc(Copia(nome,1,1)))
       Escreval("Última letra do nome: ", Copia(nome,Compr(nome),1))
       Escreval("Código da última letra: ", Carac(Asc(Copia(nome,Compr(nome),1))) , " = ", Asc(Copia(nome,Compr(nome),1)))
+      Escreva("Ao contrário: ")
+      Para C <- Compr(nome) ate 1 passo -1 faca
+           Escreva(Copia(Maiusc(nome), C, 1))
+      FimPara
+      Escreval(" ")
       Escreval("Deseja saber a posição de alguma letra(S/N)?")
       Leia(resposta)
       Se(resposta = "S") ou (resposta = "s") entao
