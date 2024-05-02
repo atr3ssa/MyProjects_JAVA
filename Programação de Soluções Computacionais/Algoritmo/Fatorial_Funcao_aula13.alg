@@ -2,39 +2,26 @@ algoritmo "FatorialDeUmNumero"
  //Função, prática 3
  //Repita
 var
-numero, contador, resultado: inteiro
+numero, fat: inteiro
+//numero, contador, resultado: inteiro
 
-Funcao fatorialdeUmNumero (N: Inteiro): Inteiro
+//ESSE É O CONCEITO DE ROTINA
+Funcao fatorial (N: Inteiro): Inteiro
 
-var
-C, fatorial: inteiro
+var Contador, Resultado: inteiro
 
 Inicio
-
-  fatorial <- 1
-  para C <- 1 ate N faca
-    fatorial <- N * fatorial
+  Resultado <- 1
+  para Contador <- 1 ate N faca
+    Resultado <- Resultado * Contador
   FimPara
-  
-  //Repita
-    // F <- N * F
-     //C <- C - 1
-  //ate(C < 1)
-  retorne fatorial
-
+  retorne Resultado
 FimFuncao
 
 inicio
-//contador <- 0
-//fatorial <- 1
-Escreval("Digite um número:")
-Leia(numero)
-//contador <- numero
-resultado <- FatorialDeUmNumero(numero)
-//Repita
-  //fatorial <- contador * fatorial
-  //contador <- contador - 1
-//ate(contador < 1)
-Escreval("O fatorial do número ", numero, " é ", resultado)
+   Escreval("Digite um número:")
+   Leia(numero)
+   fat <- Fatorial(numero)
 
+   Escreval("O ", numero, "! é ", fat)
 fimalgoritmo
