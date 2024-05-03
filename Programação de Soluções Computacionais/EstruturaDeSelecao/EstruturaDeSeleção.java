@@ -18,8 +18,15 @@ public class EstruturaDeSeleção {
         //JOptionPane = Classe
         //showMessageDialog = mostrar mensagem (null, "aprovado", nota):
        
-        }
+        }else if(nota>=80){
+            JOptionPane.showMessageDialog(null, "Aprovado com a nota " + nota + "Conceito B");
+         }else if(nota>=90){
+            JOptionPane.showMessageDialog(null, "Aprovado com a nota " + nota + "Conceito A");
+         }else{
+                    
+            JOptionPane.showMessageDialog(null, "Reprovado com a nota " + nota + "Conceito D");
        
     }
    
+}
 }
