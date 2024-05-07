@@ -16,12 +16,15 @@ para contador <- 1 ate 10 faca
                       SoC[tot] <- nome
    fimSe
 FimPara
+Limpatela
+Escreval("=======================================")
+Escreval("             LISTAGEM FINAL            ")
 Escreval("=======================================")
 Escreval("Total de pessoas com a letra C: ", tot)
 Escreval("=======================================")
 Escreval("O nome das pessoas são: ")
 para contador <- 1 ate tot faca
-     Escreval("* ", SoC[contador])
+     Escreval("* ", Maiusc(SoC[contador]))
 FimPara
 Escreval("=======================================")
 
