@@ -13,9 +13,16 @@ para contador <- 1 ate 10 faca
    leia(nome)
    Se(Copia(Maiusc(nome),1,1) = "C") entao
                       tot <- tot + 1
+                      SoC[tot] <- nome
    fimSe
 FimPara
-Escreva("Total de pessoas com a letra C: ", tot)
-
+Escreval("=======================================")
+Escreval("Total de pessoas com a letra C: ", tot)
+Escreval("=======================================")
+Escreval("O nome das pessoas são: ")
+para contador <- 1 ate tot faca
+     Escreval("* ", SoC[contador])
+FimPara
+Escreval("=======================================")
 
 fimalgoritmo
