@@ -1,30 +1,43 @@
-algoritmo "Vetor7ParesEPosicoes"
+algoritmo "Listagem da Turma"
 //Vetores
 //variaveis Compostas
-//Ler 7 valores e mostar quantos são pares;
-//Mostrar as posicoes desses valores
-//Pratica 01, parte 2
+//Listagem da turma
+//Pratica 02
 var
- valor: vetor[1..7] de inteiro
- c, totpar: inteiro
+ nome: vetor[1..4] de caractere
+ n1, n2, m: vetor[1..4] de real
+ c: inteiro
+ s: caractere
 
 inicio
- totpar <- 0
- para c <- 1 ate 7 faca
-    Escreva("Digite o ", c, "° valor: ")
-    leia(valor[c])
- FimPara
- Escreval("===================================")
- Escreval("AS POSIÇÕES CORRESPONDENTES SÃO: " )
- para c <- 1 ate 7 faca
-      Se(valor[c] % 2 = 0) entao
-                  totpar <- totpar + 1
-                  Escreval("Valor PAR na posição: ", c)
-      FimSe
- fimPara
- Escreval("===================================")
- Escreval("A quantidade de pares é: ", totpar)
- Escreval("===================================")
+para c <- 1 ate 4 faca
+   Escreval("ALUNO ", c, ": ")
+   Escreva("Nome do ", c, "° aluno: ")
+   leia(nome[c])
+   Escreva("Primeira nota: ")
+   leia(n1[c])
+   Escreva("Segunda nota: ")
+   leia(n2[c])
+   m[c] <- (n1[c] + n2[c]) / 2
+FimPara
+LimpaTela
+Escreval("=======================")
+Escreval("LISTAGEM DE ALUNOS:")
+Escreval("=======================")
+Para c <- 1 ate 4 faca
+     Se(m[c] <= 5) entao
+        s <- "Reprovado"
+     senao
+          Se(m[c] > 5) entao
+                  s <- "Aprovado"
+          FimSe
+     FimSe
+     Escreval(nome[c], m[c]," =====> ", s)
+FimPara
+
+
+
+
 
 
 
