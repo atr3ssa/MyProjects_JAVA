@@ -2,14 +2,19 @@ algoritmo "Listagem da Turma"
 //Vetores
 //variaveis Compostas
 //Listagem da turma
+//Aprovado, reprovado
+//média da turma
+
 //Pratica 02
 var
  nome: vetor[1..4] de caractere
  n1, n2, m: vetor[1..4] de real
  c: inteiro
  s: caractere
+ MT, SM: real
 
 inicio
+SM <- 0
 para c <- 1 ate 4 faca
    Escreval("ALUNO ", c, ": ")
    Escreva("Nome do ", c, "° aluno: ")
@@ -19,7 +24,9 @@ para c <- 1 ate 4 faca
    Escreva("Segunda nota: ")
    leia(n2[c])
    m[c] <- (n1[c] + n2[c]) / 2
+   SM <- SM + mc[c]
 FimPara
+MT <- SM / 4
 LimpaTela
 Escreval("=======================")
 Escreval("LISTAGEM DE ALUNOS:")
@@ -32,8 +39,9 @@ Para c <- 1 ate 4 faca
                   s <- "Aprovado"
           FimSe
      FimSe
-     Escreval(nome[c], m[c]," =====> ", s)
+     Escreval(nome[c]:15, m[c]:4:2," =====> ", s)
 FimPara
+Escreval("Média da turma: ", MT)
 
 
 
