@@ -9,7 +9,7 @@ algoritmo "Listagem da Turma"
 var
  nome: vetor[1..4] de caractere
  n1, n2, m: vetor[1..4] de real
- c: inteiro
+ c, tot: inteiro
  s: caractere
  MT, SM: real
 
@@ -24,7 +24,7 @@ para c <- 1 ate 4 faca
    Escreva("Segunda nota: ")
    leia(n2[c])
    m[c] <- (n1[c] + n2[c]) / 2
-   SM <- SM + mc[c]
+   SM <- SM + m[c]
 FimPara
 MT <- SM / 4
 LimpaTela
@@ -40,8 +40,14 @@ Para c <- 1 ate 4 faca
           FimSe
      FimSe
      Escreval(nome[c]:15, m[c]:4:2," =====> ", s)
+     Se(m[c] > MT) entao
+        tot <- tot + 1
+     FimSe
 FimPara
+Escreval("=============================================")
 Escreval("Média da turma: ", MT)
+Escreval("Quantidade de alunos acima da média: ", tot)
+Escreval("=============================================")
 
 
 
