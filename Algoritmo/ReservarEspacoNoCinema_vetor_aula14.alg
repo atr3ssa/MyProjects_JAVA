@@ -2,7 +2,9 @@ algoritmo "ReservarEspaçoNoCinema"
 // vetor
 // exercicio 3
 var
+cad: vetor[1..10]: de caractere
 resposta: caractere
+c <- inteiro
 //
 procedimento Cadeiras()
 var
@@ -14,27 +16,28 @@ FimPara
 
 FimProcedimento
 //
-procedimento ReservarCadeira()
-var
-cad: caractere
-i: inteiro
-inicio
-    Escreval("Reservar a cadeira: ")
-    leia(cad)
-    Escreval("A cadeira ", cad, " foi RESERVADA!")
+//procedimento ReservarCadeira()
+//var
 
-fimProcedimento
+//inicio
 
-inicio
+//fimProcedimento
+
+//inicio
 
   Cadeiras()
  Escreval(" ")
  Escreval("-------------------------------------------------------------")
  Repita
-       ReservarCadeira()
+       Escreval("Reservar a cadeira: ")
+       leia(cad[c])
+       Escreval("A cadeira ", cad[c], " foi RESERVADA!")
        Escreva("Quer reservar outra (S/N)? ")
        leia(resposta)
 ate (Maiusc(resposta) = "N")
+    Se(Maiusc(resposta) = "S") entao
+
+    FimSe
  
  
  
