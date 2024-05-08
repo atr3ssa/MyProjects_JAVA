@@ -6,7 +6,7 @@ var
   c: inteiro
  nome: vetor[1..3] de caracter
  nota: vetor[1..3] de real
- s, m: real
+ s, media: real
  
  //
  procedimento CadastroGabarito()
@@ -29,11 +29,12 @@ var
  i: inteiro
  qn: real
  inicio
+    qn <- 0
     Escreval("RESPOSTAS DADAS")
                para i <- 1 ate 5 faca
                     Escreva("Questão ", i, ": ")
                     leia(resposta[i])
-                                     Se(resposta[i] = gabarito[i]) entao
+                                     Se(Maiusc(resposta[i]) = Maiusc(gabarito[i])) entao
                                                     qn <- qn + 2
 
                                      FimSe
@@ -63,7 +64,7 @@ para c <- 1 ate 3 faca
      Escreval(nome[c]:10, nota[c]:4:1)
 
 fimpara
-m <- s / 3
+media <- s / 3
 Escreval("-----------------------------")
 Escreval("MÉDIA DA TURMA: ", m:4:1)
 Escreval("-----------------------------")
