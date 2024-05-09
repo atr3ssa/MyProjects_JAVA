@@ -14,6 +14,7 @@ import Operadoras.Operadora;
      *
      */
 public class Plano {
+    //Código referente ao encapsulamento
    private String nome;
    private double custoMinuto;
    private Operadora operadora;
