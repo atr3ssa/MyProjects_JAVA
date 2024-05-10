@@ -23,16 +23,22 @@ escreval("[4] Triangulo Inferior")
 escreval("[5] Sair")
 escreval("=============OPÇÃO:")
 leia(opcao)
-Escolha caso opcao
+Escolha opcao
 caso 1
-     para l <- 1 ate 4 faca
-     para c <- 1 ate 4 faca
-          Escreval(matriz[l,c]:7)
-     fimpara
-     Escreval()
-fimpara
+     escreva(matriz[l,c])
 
 caso 2
+para l <- 1 ate 4 faca
+     para c <- 1 ate 4 faca
+         Se(l = c) entao
+                      //matriz[l,c] <- 1
+                      Escreva(matriz[l,c])
+         senao
+                      Escreva("")
+         FimSe
+     fimpara
+fimpara
+
 caso 3
 caso 4
 caso 5
