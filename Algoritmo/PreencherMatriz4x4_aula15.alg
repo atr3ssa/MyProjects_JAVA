@@ -1,11 +1,14 @@
 algoritmo "PreencherMatriz4x4"
 // Matriz
 // A soma dos valores da diagonal principal         ok
-// O produto entre os valores da segunda linha
+// O produto entre os valores da segunda linha      ok
+//maior valor da 3/ coluna
 var
   matriz: vetor[1..4,1..4] de inteiro
-  l, c, soma, multi: inteiro
+  l, c, soma, multi, maior: inteiro
 inicio
+menor <- 0
+maior <- 0
 soma <- 0
 multi <- 1
   para l <- 1 ate 4 faca
@@ -29,9 +32,10 @@ multi <- 1
    para c <- 1 ate 4 faca
      multi <- multi * matriz[2,c]
   fimpara
-
   Escreval("A soma dos valores da diagonal principal são: ", soma)
   Escreval("Multiplicação: ", multi)
+  Escreval("Maior número: ", maior)
+
 
 
 
