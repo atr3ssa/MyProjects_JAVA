@@ -4,15 +4,18 @@ algoritmo "Dissecando Matrizes"
 var
  matriz: vetor[1..4,1..4] de inteiro
  l, c, opcao: inteiro
+ //
  
- procedimento Vposicao()
+ procedimento MostrarMatriz()
+ var
  inicio
-      para l <- 1 ate 4 faca
+ para l <- 1 ate 4 faca
      para c <- 1 ate 4 faca
-         Escreva("Digite o valor da posição [", l, c, "]: ")
-         leia(matriz[l,c])
+         escreva(matriz[l,c]:7)
      fimpara
+     escreval()
 fimpara
+ 
  fimprocedimento
  
  //
@@ -21,48 +24,65 @@ fimpara
  var
  t: inteiro
  inicio
-   para l <- 1 ate 4 faca
-       escreval(matriz[l,l]:4)
-       para t <- 1 ate 1 faca
-            escreva("   ")
-       fimpara
-fimpara
+  Para l <- 1 ate 4 faca
+      EscrevaL(matriz[l,l]:4)
+      Para t <- 1 ate l faca
+         Escreva("    ")
+      FimPara
+   FimPara
+
+ fimprocedimento
+ 
+ procedimento TrianguloSuperior()
+ var
+ inicio
+ fimprocedimento
+ 
+ //
+ 
+ procedimento TrianguloInferior()
+ var
+ inicio
  fimprocedimento
  
 inicio
+ para l <- 1 ate 4 faca
+     para c <- 1 ate 4 faca
+         Escreva("Digite o valor da posição [", l, c, "]: ")
+         leia(matriz[l,c])
+     fimpara
+fimpara
 
- Vposicao()
-escreval("=========================")
-Escreval("     MENU DE OPÇÕES      ")
-escreval("=========================")
+escreval("================================================")
+Escreval("                 MENU DE OPÇÕES                 ")
+escreval("================================================")
 
 escreval("[1] Mostrar a matriz")
 escreval("[2] Diagonal Principal")
 escreval("[3] Triangulo Superior")
 escreval("[4] Triangulo Inferior")
 escreval("[5] Sair")
-escreval("=========================")
+escreval("================================================")
 escreva("OPÇÃO:")
 leia(opcao)
 
 Escolha opcao
 caso 1
 //matriz completa
-para l <- 1 ate 4 faca
-     para c <- 1 ate 4 faca
-         escreva(matriz[l,c]:7)
-     fimpara
-     escreval()
-fimpara
+         MostrarMatriz()
 
 caso 2
 //diagonal principal
-           Diagonal()
+Diagonal()
 caso 3
 //triangulo superior
+TrianguloSuperior()
 
 caso 4
+//triangulo inferior
+TrianguloInferior()
 caso 5
+Ezcreval("ENCERRANDO...")
 
 fimescolha
 fimalgoritmo
