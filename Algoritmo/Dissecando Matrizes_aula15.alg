@@ -6,15 +6,26 @@ var
  l, c, opcao: inteiro
  
  procedimento Vposicao()
- 
- var
- l,c: inteiro
  inicio
       para l <- 1 ate 4 faca
      para c <- 1 ate 4 faca
          Escreva("Digite o valor da posição [", l, c, "]: ")
          leia(matriz[l,c])
      fimpara
+fimpara
+ fimprocedimento
+ 
+ //
+ 
+ procedimento Diagonal()
+ var
+ t: inteiro
+ inicio
+   para l <- 1 ate 4 faca
+       escreval(matriz[l,l]:4)
+       para t <- 1 ate 1 faca
+            escreva("   ")
+       fimpara
 fimpara
  fimprocedimento
  
@@ -46,31 +57,7 @@ fimpara
 
 caso 2
 //diagonal principal
-
-para l <- 1 ate 3 faca
-     para c <- 1 ate 3 faca
-         Se(l = c) entao
-                      //matriz[l,c] <- 1
-         senao
-                      matriz[l,c] <- 0
-         FimSe
-     fimpara
-fimpara
-
-para l <- 1 ate 4 faca
-     para c <- 1 ate 4 faca
-     
-          se(l = c) entao
-          
-              escreva(matriz[l,c])
-               
-         senao
-         fimse
-         
-     fimpara
-fimpara
-
-
+           Diagonal()
 caso 3
 //triangulo superior
 
