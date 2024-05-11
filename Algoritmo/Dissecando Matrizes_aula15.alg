@@ -46,18 +46,34 @@ fimpara
 
 caso 2
 //diagonal principal
-para l <- 1 ate 4 faca
-     para c <- 1 ate 4 faca
+
+para l <- 1 ate 3 faca
+     para c <- 1 ate 3 faca
          Se(l = c) entao
                       //matriz[l,c] <- 1
-                      Escreva(matriz[l,c])
          senao
-
+                      matriz[l,c] <- 0
          FimSe
      fimpara
 fimpara
 
+para l <- 1 ate 4 faca
+     para c <- 1 ate 4 faca
+     
+          se(l = c) entao
+          
+              escreva(matriz[l,c])
+               
+         senao
+         fimse
+         
+     fimpara
+fimpara
+
+
 caso 3
+//triangulo superior
+
 caso 4
 caso 5
 
