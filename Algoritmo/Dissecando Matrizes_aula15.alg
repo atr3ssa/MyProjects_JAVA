@@ -35,22 +35,34 @@ fimpara
  
  procedimento TrianguloSuperior()
  var
- t, c: inteiro
+ t: inteiro
  inicio
-  Para l <- 3 ate 4 faca
-       para c <- 1 ate 2 faca
+  Para l <- 1 ate 3 faca
+       Escreva("    ")
+       Para c <- 1 + 1 ate 4 faca
       EscrevaL(matriz[l,c]:4)
-      //Para t <- 1 ate l faca
-        // Escreva("    ")
+      fimPara
+      escreval()
+      Para t <- 1 ate l faca
+         Escreva("    ")
       FimPara
    FimPara
+   escreval()
  fimprocedimento
  
  //
  
  procedimento TrianguloInferior()
  var
+ c, l: inteiro
  inicio
+ Para l <- 2 ate 4 faca
+       Escreva("    ")
+       Para c <- 1 ate 1 - 1 faca
+      EscrevaL(matriz[l,c]:4)
+      fimPara
+   FimPara
+   escreval()
  fimprocedimento
  
 inicio
