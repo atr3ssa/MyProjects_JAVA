@@ -25,7 +25,7 @@ fimpara
  t: inteiro
  inicio
   Para l <- 1 ate 4 faca
-      EscrevaL(matriz[l,l]:4)
+      EscrevaL(matriz[l,l]:7)
       Para t <- 1 ate l faca
          Escreva("    ")
       FimPara
@@ -42,7 +42,7 @@ fimpara
   Para l <- 1 ate 3 faca
        Escreva("    ")
        Para c <- 1+1 ate 4 faca
-      EscrevaL(matriz[l,c]:4)
+      EscrevaL(matriz[l,c]:7)
       fimPara
       escreval()
       Para t <- 1 ate l faca
@@ -60,7 +60,7 @@ fimpara
  Para l <- 2 ate 4 faca
        Escreval()
        Para c <- 1 ate 1-1 faca
-      EscrevaL(matriz[l,c]:4)
+      EscrevaL(matriz[l,c]:7)
       fimPara
    FimPara
    escreval()
