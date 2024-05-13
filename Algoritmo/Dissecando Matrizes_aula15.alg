@@ -58,7 +58,7 @@ fimpara
  var
  inicio
  Para l <- 2 ate 4 faca
-       Escreva()
+       Escreval()
        Para c <- 1 ate 1-1 faca
       EscrevaL(matriz[l,c]:4)
       fimPara
@@ -111,5 +111,5 @@ caso 5
 Escreval("ENCERRANDO...")
 
 fimescolha
-ate(opcao = 5)
+ate (opcao = 5)
 fimalgoritmo
