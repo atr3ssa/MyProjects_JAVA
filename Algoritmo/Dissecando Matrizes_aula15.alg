@@ -35,7 +35,15 @@ fimpara
  
  procedimento TrianguloSuperior()
  var
+ t, c: inteiro
  inicio
+  Para l <- 3 ate 4 faca
+       para c <- 1 ate 2 faca
+      EscrevaL(matriz[l,c]:4)
+      //Para t <- 1 ate l faca
+        // Escreva("    ")
+      FimPara
+   FimPara
  fimprocedimento
  
  //
@@ -52,7 +60,9 @@ inicio
          leia(matriz[l,c])
      fimpara
 fimpara
-
+limpatela
+repita
+escreval(" ")
 escreval("================================================")
 Escreval("                 MENU DE OPÇÕES                 ")
 escreval("================================================")
@@ -65,6 +75,7 @@ escreval("[5] Sair")
 escreval("================================================")
 escreva("OPÇÃO:")
 leia(opcao)
+limpatela
 
 Escolha opcao
 caso 1
@@ -82,7 +93,8 @@ caso 4
 //triangulo inferior
 TrianguloInferior()
 caso 5
-Ezcreval("ENCERRANDO...")
+Escreval("ENCERRANDO...")
 
 fimescolha
+ate(opcao = 5)
 fimalgoritmo
