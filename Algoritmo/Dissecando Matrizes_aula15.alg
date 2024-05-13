@@ -33,13 +33,15 @@ fimpara
 
  fimprocedimento
  
+ //
+ 
  procedimento TrianguloSuperior()
  var
  t: inteiro
  inicio
   Para l <- 1 ate 3 faca
        Escreva("    ")
-       Para c <- 1 + 1 ate 4 faca
+       Para c <- 1+1 ate 4 faca
       EscrevaL(matriz[l,c]:4)
       fimPara
       escreval()
@@ -54,11 +56,10 @@ fimpara
  
  procedimento TrianguloInferior()
  var
- c, l: inteiro
  inicio
  Para l <- 2 ate 4 faca
-       Escreva("    ")
-       Para c <- 1 ate 1 - 1 faca
+       Escreva()
+       Para c <- 1 ate 1-1 faca
       EscrevaL(matriz[l,c]:4)
       fimPara
    FimPara
@@ -74,7 +75,7 @@ inicio
 fimpara
 limpatela
 repita
-escreval(" ")
+escreval()
 escreval("================================================")
 Escreval("                 MENU DE OPÇÕES                 ")
 escreval("================================================")
@@ -85,8 +86,10 @@ escreval("[3] Triangulo Superior")
 escreval("[4] Triangulo Inferior")
 escreval("[5] Sair")
 escreval("================================================")
+repita
 escreva("OPÇÃO:")
 leia(opcao)
+ate(opcao >= 1) e (opcao <=5)
 limpatela
 
 Escolha opcao
