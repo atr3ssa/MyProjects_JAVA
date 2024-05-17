@@ -1,20 +1,26 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package resolucaotela;
 
-/**
- *
- * @author DreEm
- */
+import java.awt.Dimension;
+import java.awt.Toolkit;
+//importar biblioteca
+
+
 public class ResolucaoTela {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
-        // TODO code application logic here
+      Dimension tela = Toolkit.getDefaultToolkit().getScreenSize();
+      //Classe Dimension e Toolkit
+      //Dimension = Classe que encapsula a largura e a altura
+      //Toolkit = Super Classe com informações de janelas e frames
+      //Método .getDefaultTookit() = retornar Toolkit especifico da plataforma
+      //Método .getScreenSize() = retorna um Toolkit do tipo Dimension;
+      double largura = tela.getWidth();
+      //Método .getWidth() = pegar informações atuais de largura
+      double altura =  tela.getHeight();
+      //Método .getheight() = pegar informações atuais de altura
+        System.out.println("A resolução da sua tela é " + largura + " X " + altura);
     }
     
 }
