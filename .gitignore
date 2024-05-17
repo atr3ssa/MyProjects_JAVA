@@ -23,3 +23,8 @@
 hs_err_pid*
 replay_pid*
 .vscode/settings.json
+/Java/HoraDoSistema/nbproject/private/
+/Java/HoraDoSistema/build/
+/Java/IdiomaDoSistema/nbproject/private/
+/Java/IdiomaDoSistema/build/
+/Java/ResolucaoTela/nbproject/private/
