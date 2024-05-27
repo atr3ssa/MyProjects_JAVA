@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="OlaMundoJavaFCX.jnlp">
+  <information>
+    <title>OlaMundoJavaFCX</title>
+    <vendor>DreEm</vendor>
+    <description>OlaMundoJavaFCX</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="OlaMundoJavaFCX.jar" size="2674" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="olamundojavafcx.OlaMundoJavaFCX"  name="OlaMundoJavaFCX" />
+  <update check="always"/>
+</jnlp>
