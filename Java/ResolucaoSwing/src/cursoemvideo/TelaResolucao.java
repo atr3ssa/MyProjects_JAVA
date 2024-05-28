@@ -111,7 +111,7 @@ public class TelaResolucao extends javax.swing.JFrame {
         Dimension tela = Toolkit.getDefaultToolkit().getScreenSize();
         double largura = tela.getWidth();
         double altura =  tela.getHeight();
-        lblResolucao.setText(largura);
+        lblResolucao.setText(largura + " x " + altura);
     }//GEN-LAST:event_btnResolucaoActionPerformed
 
     /**
