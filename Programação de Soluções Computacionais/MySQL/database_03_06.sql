@@ -1,6 +1,6 @@
-create database if not exists Universidade;
+create database if not exists UniversidadeB;
 show databases;
-use universidade;
+use universidadeb;
 create table if not exists aluno(
 id_aluno int auto_increment primary key,
 nome_aluno varchar(30) not null,
@@ -11,6 +11,8 @@ id_professor int,
 constraint fk_AlunoProfessor foreign key (id_professor) references Professor(id_professor)
 );
 
+alter table aluno add column email_aluno varchar(30) not null;
+alter table aluno add column telefone_aluno varchar(30) not null;
 
 Create table if not exists professor( -- Cria a tabela
 id_professor int auto_increment primary key,
@@ -21,3 +23,5 @@ email_professor varchar(100)
 show tables;
 describe aluno;
 describe professor;
+select* from aluno;
+select* from professor;
