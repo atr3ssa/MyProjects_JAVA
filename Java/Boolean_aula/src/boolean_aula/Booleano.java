@@ -9,7 +9,7 @@ public class Booleano {
         //operadores lógicos 
        
         //(algoritmo para ir a praia)
-        boolean fimDeSemana = true;
+        boolean fimDeSemana = false;
         boolean fazendoSol = true;
         boolean vamosAPraia = fimDeSemana && fazendoSol;
         //mostrar resultado
@@ -36,6 +36,10 @@ public class Booleano {
         
         System.out.println(vamosAPraia);
         
+        //Operador Alternario (3 termos)
+        // termo sendo avaliado (?), valor caso seja verdadeiro, valor caso seja falso
+        String mensagem = fimDeSemana ? "É fim de semana!" : "não é fim de semana!";
+        System.out.println(mensagem);
     }
     
 }
