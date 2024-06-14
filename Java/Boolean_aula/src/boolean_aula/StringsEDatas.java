@@ -52,11 +52,19 @@ public class StringsEDatas {
            
         String diaSemana = hoje.getDayOfWeek().getDisplayName(TextStyle.FULL, brasil);
         String saudacao;
-        LocalDateTime agora = LocalDateTime.new();
-        if(agora.getHour() >= 8 && agora.getHour() <12){
-            
-        }
         
+        LocalDateTime agora = LocalDateTime.now();
+        if(agora.getHour() >= 8 && agora.getHour() <12){
+           saudacao = "Bom dia!"; 
+        } else if(agora.getHour()>=12 && agora.getHour() <18){
+            saudacao = "Boa Tarde!";
+        } else if(agora.getHour()>=18 && agora.getHour() <24){
+            saudacao= "Boa noite!";
+        } else {
+            saudacao = "Olá";
+        }
+        //formatos depois valores
+        System.out.printf("Olá, %s. hoje é %s, %s. %n", nome, diaSemana, saudacao.toUpperCase());
     }
   
 }
