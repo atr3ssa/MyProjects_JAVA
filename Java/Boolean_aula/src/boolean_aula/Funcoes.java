@@ -3,18 +3,21 @@ package boolean_aula;
 
 
 public class Funcoes {
-    //método de partida
+    //método = função de partida
     public static void main(String[] args) {
         //farei o mesmo, mas dentro de uma função
         //String nome = "Andressa";
         //System.out.println("Hello " + nome);
         
-        //chamar a função AQUI, dentro do main
+        String nomeOriginal = "let's Code!";
+        //chamar a função/método AQUI, dentro do main. Com o paramentro dentro dos ()
         
-        saudacao();
+        //escopo de função
+        saudacao(nomeOriginal);
     }
-    //funcao Saudacao
-    public static void saudacao() {
-        System.out.println("Hello Andressa");
+    //funcao/método Saudacao
+    //saudacao(passagem de parametros)
+    public static void saudacao(String nomeParametro) {
+        System.out.println("Hello" + nomeParametro);
     }
 }
