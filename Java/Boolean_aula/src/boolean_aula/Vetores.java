@@ -32,6 +32,16 @@ public class Vetores {
         //System.out.println(Arrays.toString(letras));
         
         //3° forma
+        //descobrir o maior, o menor e a média dos elementos
+        
+        int[] numeros = { 9, 10, 12, 25, 2};
+        int maior = numeros[0];
+        int menor = numeros[0];
+        int media = numeros[0];
+        
+        for
+        
+        
          
         
         
