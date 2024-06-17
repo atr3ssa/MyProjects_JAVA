@@ -5,7 +5,7 @@
 package cursopoo;
 
 
-public class CursoPOO {
+public class Primitivos {
 
    //método/função main
    //5 caracteristicas:
@@ -26,11 +26,11 @@ public class CursoPOO {
         // char = igual o short, mas só aceita os positivos (0 - 65535)
         // int = 4 bytes (32 bits) = o mais usado (-2b - 2b)
         // long = 8 bytes (64 bits) (-9t - 9t)
+        int variavelInt = 2147483;
         
+        System.out.println(variavelInt);
         
-        System.out.println(variavelByte);
-        
-        
+         
     }
     
 }
