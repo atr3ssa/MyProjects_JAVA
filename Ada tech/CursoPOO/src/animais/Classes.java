@@ -8,6 +8,8 @@ public class Classes {
         // classe diferente de objeto
         
         //variavel de referencia ( referencia um objeto)
+        //cria objeto cachorro na memória
         Cachorro cachorro1;
+        cachorro1 = new Cachorro();
     }
 }
