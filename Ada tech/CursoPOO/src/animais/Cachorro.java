@@ -3,12 +3,12 @@ package animais;
 
 
 public class Cachorro {
-    // definir atributos do cachorro, caracteristicas dele
+    //definir atributos do cachorro, caracteristicas dele
     //classe em java
-    String nome;   
-    String cor;
-    int altura;
-    double peso;
-    int tamanhoDoRabo;
+    public String nome;   
+    public String cor;
+    public int altura;
+    public double peso;
+    public int tamanhoDoRabo;
     
 }
