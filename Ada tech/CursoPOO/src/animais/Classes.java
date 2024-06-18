@@ -28,6 +28,10 @@ public class Classes {
         
         //atributos = caracteristicas do objeto
         
+        //P/ realizar uma ação
+        cachorro1.latir();
+        //variavel de referencia do objeto . método 
+        
         
         
     }
