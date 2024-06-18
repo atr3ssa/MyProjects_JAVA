@@ -26,5 +26,9 @@ public class Classes {
         
         System.out.println(cachorro1);
         
+        //atributos = caracteristicas do objeto
+        
+        
+        
     }
 }

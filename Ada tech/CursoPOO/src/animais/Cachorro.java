@@ -11,4 +11,17 @@ public class Cachorro {
     public double peso;
     public int tamanhoDoRabo;
     
+    //Métodos = interagir com objeto/ações (objeto executa a ação)
+    
+    //Método comer:
+    
+    public void comer (){
+        //assinatura
+        //método público, não tem retorno, se chama "comer", não recebe variável nenhuma e não faz nada
+        
+    }
+    
+    public void latir (){
+        System.out.println("Au au");
+    }
 }
