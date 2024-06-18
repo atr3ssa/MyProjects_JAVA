@@ -24,4 +24,12 @@ public class Cachorro {
     public void latir (){
         System.out.println("Au au");
     }
+    
+    public String pegar(){
+        //agr o método terá retorno
+        return "bolinha";
+        //tem que por "retorno" e algo com o mesmo tipo do método;
+        
+        
+    }
 }

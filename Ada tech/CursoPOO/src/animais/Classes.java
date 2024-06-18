@@ -31,6 +31,8 @@ public class Classes {
         //P/ realizar uma ação
         cachorro1.latir();
         //variavel de referencia do objeto . método 
+        //cachorro1.pegar(); dessa forma, não aparece o que foi retornado. P/ aparecer é necessário usar um System out, como abaixo:
+        System.out.println("O cachorro pegou a " + cachorro1.pegar());
         
         
         
