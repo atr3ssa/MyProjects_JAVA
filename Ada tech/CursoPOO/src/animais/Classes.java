@@ -1,7 +1,4 @@
-
 package animais;
-//import java.lang.String;
-
 
 public class Classes {
     public static void main(String[] args) {
@@ -16,7 +13,7 @@ public class Classes {
         //cachorro1 = new Cachorro();
         //ou
         Cachorro cachorro1 = new Cachorro();
-        Cachorro cachorro2 = new Cachorro(String nome, String cor, int altura, double peso, int tamanhoDoRabo );
+        Cachorro cachorro2 = new Cachorro("Puppy","marrom", 25 , 5.5, 5 , "paz");
         
         System.out.println(cachorro2.getNome());
         System.out.println(cachorro2.getPeso());
