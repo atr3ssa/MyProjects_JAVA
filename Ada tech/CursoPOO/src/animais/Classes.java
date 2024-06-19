@@ -34,9 +34,9 @@ public class Classes {
         //cachorro1.pegar(); dessa forma, não aparece o que foi retornado. P/ aparecer é necessário usar um System out, como abaixo:
         System.out.println("O cachorro pegou a " + cachorro1.pegar());
         //String acao = null;
-        System.out.println("O cachorro está " + cachorro1.interagira("carinho"));
-        
-       
+        System.out.println("O cachorro está " + cachorro1.interagir("vai dormir!"));
+        System.out.println("O cachorro está " + cachorro1.interagir("carinho"));
+        System.out.println("O cachorro está " + cachorro1.interagir("nada"));
         
         
         

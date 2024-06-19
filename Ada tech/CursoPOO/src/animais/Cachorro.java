@@ -32,13 +32,15 @@ public class Cachorro {
         //tem que por "retorno" e algo com o mesmo tipo do método;   
     }
     
-    public String interagira (String acao){
+    public String interagir (String acao){
         //validação
        if(acao.equals("carinho")){
            this.estadoDeEspirito = "feliz";
            
            
-       }else {
+       }else if(acao.equals("vai dormir!")) {
+           this.estadoDeEspirito = "bravo";
+       }else{
            this.estadoDeEspirito = "neutro";
        } 
        return estadoDeEspirito;
