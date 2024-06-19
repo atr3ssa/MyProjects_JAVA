@@ -18,11 +18,12 @@ public class Classes {
         // define a classe construída, coloca o nome da variavel de refencia para o objeto = cria um novo objeto Cachorro;
         
         //colocar as variaveis cachorro
-        cachorro1.nome = "Puppy";
-        cachorro1.cor = "marrom";
-        cachorro1.altura = 25;
-        cachorro1.peso = 5.5;
-        cachorro1.tamanhoDoRabo = 5;
+        cachorro1.setNome("Puppy");
+        //referencia.chamaométodo(passa a variavel);
+        cachorro1.setCor ("marrom");
+        cachorro1.setAltura(25);
+        cachorro1.setPeso(5.5);
+        cachorro1.setTamanhoDoRabo(5);
         
         System.out.println(cachorro1);
         
