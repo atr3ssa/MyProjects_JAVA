@@ -3,6 +3,8 @@ package animais;
 
 
 public class Cachorro {
+    //atributos
+    
     //definir atributos do cachorro, caracteristicas dele
     //classe em java
    
@@ -22,6 +24,27 @@ public class Cachorro {
     private double peso;
     private int tamanhoDoRabo;
     private String estadoDeEspirito;
+    
+    //Construtores sempre entre os atributos e os métodos
+    //Construtores ( oq executa a construção do seu objeto)
+    
+    //Construtor
+    public Cachorro(){} //construtor default/padrão, vazio
+    public Cachorro(String nome, String cor, int altura, double peso, int tamanhoDoRabo, String estadoDeEspirito) {
+        this.nome = nome;
+        this.cor = cor;
+        this.altura = altura;
+        this.peso = peso;
+        this.tamanhoDoRabo = tamanhoDoRabo;
+        this.estadoDeEspirito = estadoDeEspirito;
+        //pega a info xxx que está no construtor e passa para a xxx lá dos atributos
+    }
+    
+    
+    
+    
+    
+    //Métodos
     
     //getters(pegar) e setters(coloca)
     //são publicos

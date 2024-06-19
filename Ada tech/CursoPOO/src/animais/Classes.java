@@ -1,6 +1,5 @@
 
 package animais;
-import java.lang.String;
 
 public class Classes {
     public static void main(String[] args) {
@@ -15,15 +14,20 @@ public class Classes {
         //cachorro1 = new Cachorro();
         //ou
         Cachorro cachorro1 = new Cachorro();
+        Cachorro cachorro2 = new Cachorro(String "Puppy", String "marrom", int 25 , double 5.5, int 5 );
+        
+        System.out.println(cachorro2.getNome());
+        System.out.println(cachorro2.getPeso());
+       // Cachorro() = construtor padrão (vazio)
         // define a classe construída, coloca o nome da variavel de refencia para o objeto = cria um novo objeto Cachorro;
         
         //colocar as variaveis cachorro
-        cachorro1.setNome("Puppy");
-        //referencia.chamaométodo(passa a variavel);
-        cachorro1.setCor ("marrom");
-        cachorro1.setAltura(25);
-        cachorro1.setPeso(5.5);
-        cachorro1.setTamanhoDoRabo(5);
+//        cachorro1.setNome("Puppy");
+//        //referencia.chamaométodo(passa a variavel);
+//        cachorro1.setCor ("marrom");
+//        cachorro1.setAltura(25);
+//        cachorro1.setPeso(5.5);
+//        cachorro1.setTamanhoDoRabo(5);
         
         System.out.println(cachorro1);
         
