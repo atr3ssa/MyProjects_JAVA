@@ -34,7 +34,7 @@ public class Cachorro {
     //método que recebe e retorna
     public String interagir (String acao){
         //validação
-       if(acao.equals("carinho")){
+       /*if(acao.equals("carinho")){
            this.estadoDeEspirito = "feliz";
            
            
@@ -43,7 +43,21 @@ public class Cachorro {
        }else{
            this.estadoDeEspirito = "neutro";
        } 
-       return estadoDeEspirito;
+       return estadoDeEspirito;}*/
+       //seleciona ctrl + barrinha, ele comenta tudo
+       //versão com switch (deixará mais clean e menos verboso 
+       
+       switch (acao){
+           case "carinho": this.estadoDeEspirito = "feliz";
+           break;
+           case "vai dormir!": this.estadoDeEspirito = "bravo";
+           break;
+           case "pisar na patinha": this.estadoDeEspirito = "triste";
+           break;
+           default: this.estadoDeEspirito = "neutro";
+           break;
+       }
+       return this.estadoDeEspirito;
+    }  
         
-    }
 }
