@@ -1,6 +1,6 @@
 
 package animais;
-
+import java.lang.String;
 
 public class Classes {
     public static void main(String[] args) {
@@ -33,6 +33,12 @@ public class Classes {
         //variavel de referencia do objeto . método 
         //cachorro1.pegar(); dessa forma, não aparece o que foi retornado. P/ aparecer é necessário usar um System out, como abaixo:
         System.out.println("O cachorro pegou a " + cachorro1.pegar());
+        //String acao = null;
+        System.out.println("O cachorro está " + cachorro1.interagira("carinho"));
+        
+       
+        
+        
         
         
         

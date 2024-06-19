@@ -10,10 +10,11 @@ public class Cachorro {
     public int altura;
     public double peso;
     public int tamanhoDoRabo;
+    public String estadoDeEspirito;
     
     //Métodos = interagir com objeto/ações (objeto executa a ação)
     
-    //Método comer:
+    //Métodos:
     
     public void comer (){
         //assinatura
@@ -28,8 +29,19 @@ public class Cachorro {
     public String pegar(){
         //agr o método terá retorno
         return "bolinha";
-        //tem que por "retorno" e algo com o mesmo tipo do método;
-        
+        //tem que por "retorno" e algo com o mesmo tipo do método;   
+    }
+    
+    public String interagira (String acao){
+        //validação
+       if(acao.equals("carinho")){
+           this.estadoDeEspirito = "feliz";
+           
+           
+       }else {
+           this.estadoDeEspirito = "neutro";
+       } 
+       return estadoDeEspirito;
         
     }
 }
