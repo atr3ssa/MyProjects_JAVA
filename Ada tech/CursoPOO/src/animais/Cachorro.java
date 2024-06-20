@@ -152,5 +152,12 @@ public class Cachorro {
        }
        return this.estadoDeEspirito;
     }  
+//Método toString(escolhe um campo p validar como único ( no caso aqui, o NOME)
+//Deixa o endereço de memória legível
+//tomar cuidado p escolher uma variável única 
+    @Override
+    public String toString() {
+        return "Cachorro{" + "nome=" + nome + '}';
+    }
         
 }
