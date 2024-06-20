@@ -14,7 +14,9 @@ public class Classes {
         //ou
         Cachorro cachorro0 = new Cachorro(); //Construtor padrão
         Cachorro cachorro1 = new Cachorro("Puppy","marrom", 25 , 5.5, 5 , "paz");
+        System.out.println(cachorro1.getNumeroDeCachorros());
         Cachorro cachorro2 = new Cachorro("Magnus","marrom", 25 , 5.5, 5 , "paz");
+        System.out.println(cachorro2.getNumeroDeCachorros());
         
         System.out.println(cachorro1.getNome());
         System.out.println(cachorro1.getPeso());
@@ -45,7 +47,7 @@ public class Classes {
         //System.out.println(cachorro1.toString());
         //System.out.println(cachorro2.toString());
         
-        
+      
         //atributos = caracteristicas do objeto
         
         //P/ realizar uma ação

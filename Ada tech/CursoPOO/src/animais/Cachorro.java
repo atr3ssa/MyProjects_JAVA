@@ -17,7 +17,8 @@ public class Cachorro {
 //    Qualquer classe em pacote diferente = public
     
      //Como encapsular os objetos? atributos private
-    
+     //Variável estática = única p cada classe
+    static int numeroDeCachorros;
     private String nome;   
     private String cor;
     private int altura;
@@ -38,13 +39,23 @@ public class Cachorro {
         this.tamanhoDoRabo = tamanhoDoRabo;
         this.estadoDeEspirito = estadoDeEspirito;
         //pega a info xxx que está no construtor e passa para a xxx lá dos atributos
+        
+        numeroDeCachorros ++; // numeroDeCachorros = numeroDeCachorros + 1
     }
-    
 
     //Métodos
     
     //getters(pegar) e setters(coloca)
     //são publicos
+    
+    public static int getNumeroDeCachorros() {
+        return numeroDeCachorros;
+    }
+
+    public static void setNumeroDeCachorros(int numeroDeCachorros) {
+        Cachorro.numeroDeCachorros = numeroDeCachorros;
+    }
+
 
     public String getNome() {
         //pega a variavel nome
@@ -155,6 +166,7 @@ public class Cachorro {
 //Método toString(escolhe um campo p validar como único ( no caso aqui, o NOME)
 //Deixa o endereço de memória legível
 //tomar cuidado p escolher uma variável única 
+//Pesquisar sobre DEBUG
     @Override
     public String toString() {
         return "Cachorro{" + "nome=" + nome + '}';
