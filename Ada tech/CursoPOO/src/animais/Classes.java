@@ -12,7 +12,7 @@ public class Classes {
         //Cachorro cachorro1;
         //cachorro1 = new Cachorro();
         //ou
-        Cachorro cachorro1 = new Cachorro();
+        Cachorro cachorro1 = new Cachorro(); //Construtor padrão
         Cachorro cachorro2 = new Cachorro("Puppy","marrom", 25 , 5.5, 5 , "paz");
         
         System.out.println(cachorro2.getNome());
