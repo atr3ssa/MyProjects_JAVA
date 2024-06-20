@@ -12,11 +12,12 @@ public class Classes {
         //Cachorro cachorro1;
         //cachorro1 = new Cachorro();
         //ou
-        Cachorro cachorro1 = new Cachorro(); //Construtor padrão
+        Cachorro cachorro0 = new Cachorro(); //Construtor padrão
+        Cachorro cachorro1 = new Cachorro("Puppy","marrom", 25 , 5.5, 5 , "paz");
         Cachorro cachorro2 = new Cachorro("Puppy","marrom", 25 , 5.5, 5 , "paz");
         
-        System.out.println(cachorro2.getNome());
-        System.out.println(cachorro2.getPeso());
+        System.out.println(cachorro1.getNome());
+        System.out.println(cachorro1.getPeso());
        // Cachorro() = construtor padrão (vazio)
         // define a classe construída, coloca o nome da variavel de refencia para o objeto = cria um novo objeto Cachorro;
         
@@ -27,8 +28,20 @@ public class Classes {
 //        cachorro1.setAltura(25);
 //        cachorro1.setPeso(5.5);
 //        cachorro1.setTamanhoDoRabo(5);
+
+//COMO FICA EM MEMÓRIA(cada objeto tem um endereço de memória próprio):
+        System.out.println(cachorro0.toString());
+        System.out.println(cachorro1.toString());
+        System.out.println(cachorro2.toString());
         
-        System.out.println(cachorro1);
+        System.out.println("-------------------------------------");
+        cachorro1 = cachorro2; //fez com que ambos objetos ficassem com o mesmo endereço (Cuidado)
+        //Isso faz com que um dos objetos se perca na memória e não possa mais ser achado
+        //Garbet colector = coletor de lixo no java, em algum momento ele vai rodar e jogar o objeto perdido fora
+        //Pesquisar como funciona o garbet colector no java
+        System.out.println(cachorro1.toString());
+        System.out.println(cachorro2.toString());
+        
         
         //atributos = caracteristicas do objeto
         
