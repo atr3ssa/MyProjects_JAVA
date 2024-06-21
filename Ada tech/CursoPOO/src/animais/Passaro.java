@@ -19,6 +19,9 @@ public class Passaro {
         this.altura = altura;
         this.peso = peso;
         this.estadoDeEspirito = estadoDeEspirito;
+        
+        //para contar a quantidade de passaros
+        numeroDePassaros ++; // numeroDePassaros = numeroDePassaros + 1
     }
     
     //Métodos(público)

@@ -21,6 +21,9 @@ public class Gato {
         this.altura = altura;
         this.peso = peso;
         this.estadoDeEspirito = estadoDeEspirito;
+        
+        //para contar a quantidade de gatos
+        numeroDeGatos ++; // numeroDeGatos = numeroDeGatos + 1
     }
     
     //Métodos (públicos)

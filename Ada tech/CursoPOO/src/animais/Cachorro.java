@@ -41,6 +41,7 @@ public class Cachorro {
         this.estadoDeEspirito = estadoDeEspirito;
         //pega a info xxx que está no construtor e passa para a xxx lá dos atributos
         
+        //para contar a quantidade de passaros
         numeroDeCachorros ++; // numeroDeCachorros = numeroDeCachorros + 1
     }
 
