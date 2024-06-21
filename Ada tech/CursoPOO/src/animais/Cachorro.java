@@ -4,20 +4,21 @@ package animais;
 
 public class Cachorro {
     //atributos
+        //atributos = caracteristicas do objeto
     
-    //definir atributos do cachorro, caracteristicas dele
-    //classe em java
+        //definir atributos do cachorro, caracteristicas dele
+        //classe em java
    
     //encapsulamento (encapsular o seu objeto de forma segura)
-    //Quais são os modificadores de acesso:
-//    a partir da mesma classe = public, protected, default, private
-//    Qualquer classe no mesmo pacote = public, protected, default
-//    Qualquer classe filha no mesmo pacote = public, protected, default
-//    Qualquer classe filha pacote diferente = public, protected
-//    Qualquer classe em pacote diferente = public
+        //Quais são os modificadores de acesso:
+            //    a partir da mesma classe = public, protected, default, private
+            //    Qualquer classe no mesmo pacote = public, protected, default
+            //    Qualquer classe filha no mesmo pacote = public, protected, default
+            //    Qualquer classe filha pacote diferente = public, protected
+            //    Qualquer classe em pacote diferente = public
     
      //Como encapsular os objetos? atributos private
-     //Variável estática = única p cada classe
+        //Variável estática = única p cada classe
     static int numeroDeCachorros;
     private String nome;   
     private String cor;
@@ -27,7 +28,7 @@ public class Cachorro {
     private String estadoDeEspirito;
     
     //Construtores sempre entre os atributos e os métodos
-    //Construtores ( oq executa a construção do seu objeto)
+        //Construtores ( oq executa a construção do seu objeto)
     
     //Construtor
     public Cachorro(){} //construtor default/padrão, vazio
@@ -45,8 +46,8 @@ public class Cachorro {
 
     //Métodos
     
-    //getters(pegar) e setters(coloca)
-    //são publicos
+        //getters(pegar) e setters(coloca)
+        //são publicos
     
     public static int getNumeroDeCachorros() {
         return numeroDeCachorros;
@@ -114,11 +115,9 @@ public class Cachorro {
     }
     
     
-    
-    //Métodos = interagir com objeto/ações (objeto executa a ação)
-    
     //Métodos:
-    //Método que não faz nada
+        //Métodos = interagir com objeto/ações (objeto executa a ação)
+        //Método que não faz nada
     public void comer (){
         //assinatura
         //método público, não tem retorno, se chama "comer", não recebe variável nenhuma e não faz nada
@@ -164,10 +163,11 @@ public class Cachorro {
        return this.estadoDeEspirito;
     }  
 //Método toString(escolhe um campo p validar como único ( no caso aqui, o NOME)
-//Deixa o endereço de memória legível
-//tomar cuidado p escolher uma variável única 
-//Pesquisar sobre DEBUG
-    @Override
+    //Deixa o endereço de memória legível
+    //tomar cuidado p escolher uma variável única 
+    //Pesquisar sobre DEBUG
+    
+    @Override //(ligado a herança)
     public String toString() {
         return "Cachorro{" + "nome=" + nome + '}';
     }
