@@ -4,38 +4,20 @@ package animais;
 
 public class Cachorro extends Animal {//Classe filha
     //Atributos estão sendo herdados da classe animal
+    
     static int numeroDeCachorros; //Variável estática = única p cada classe
     private int tamanhoDoRabo;//atributo só do cachorro
-
-    //Construtor (sempre entre os atributos e os métodos) / Construtores = oq executa a construção do seu objeto
-    public Cachorro(){} //construtor default/padrão, vazio
-    public Cachorro( int tamanhoDoRabo) {
-        this.nome = nome;
-        this.cor = cor;
-        this.altura = altura;
-        this.peso = peso;
-        this.tamanhoDoRabo = tamanhoDoRabo;
-        this.estadoDeEspirito = estadoDeEspirito;
-        //pega a info xxx que está no construtor e passa para a xxx lá dos atributos
-        
-        //para contar a quantidade de passaros
-        numeroDeCachorros ++; // numeroDeCachorros = numeroDeCachorros + 1
-    }
-
-    //Métodos
     
-        //getters(pegar) e setters(coloca)
-        //são publicos
+                //numeroDeCachorros ++; // numeroDeCachorros = numeroDeCachorros + 1 / para contar a quantidade de cachorros
     
-    public static int getNumeroDeCachorros() {
-        return numeroDeCachorros;
+    //Constructor herdado da classe animal
+    
+    public Cachorro(String nome, String cor, int altura, double peso, int numeroDeCachorros, String estadoDeEspirito) {
+        super(nome, cor, altura, peso, estadoDeEspirito);//constructor que bate com o constructor do pai (super) /ele envia as infos daqui
     }
-
-    public static void setNumeroDeCachorros(int numeroDeCachorros) {
-        Cachorro.numeroDeCachorros = numeroDeCachorros;
-    }
-
-
+    
+   //Métodos getters(pegar) e setters(coloca)
+    
     public String getNome() {
         //pega a variavel nome
         return nome;
@@ -93,32 +75,33 @@ public class Cachorro extends Animal {//Classe filha
     }
     
     
-    //Métodos:
+    //Métodos estão sendo herdados da classe animal
+    
+    //Métodos apenas da classe Cachorro
 
-    public String pegar(){
-        //Método que retorna algo
-        //agr o método terá retorno
+    public String pegar(){//Método que retorna algo
         return "bolinha";
-        //tem que por "retorno" e algo com o mesmo tipo do método;   
+        //tem que por "retorno" e algo com o mesmo tipo do método; 
+        //agr o método terá retorno
     }
-    public String interagir (String acao){
-        //método que recebe e retorna
+    public String interagir (String acao){//método que recebe e retorna
         //validação
-       /*if(acao.equals("carinho")){
-           this.estadoDeEspirito = "feliz";
-           
-           
-       }else if(acao.equals("vai dormir!")) {
-           this.estadoDeEspirito = "bravo";
-       }else{
-           this.estadoDeEspirito = "neutro";
-       } 
-       return estadoDeEspirito;}*/
+                    /*if(acao.equals("carinho")){
+                        this.estadoDeEspirito = "feliz";
+        
+                    }else if(acao.equals("vai dormir!")) {
+                        this.estadoDeEspirito = "bravo";
+        
+                    }else{
+                        this.estadoDeEspirito = "neutro";
+                    } 
+            return estadoDeEspirito;}*/
+                    
        //seleciona ctrl + barrinha, ele comenta tudo
+       
        //versão com switch (deixará mais clean e menos verboso 
        
        switch (acao){
-           //String e enum(pesquisar "O que é?"
            case "carinho": this.estadoDeEspirito = "feliz";
            break;
            case "vai dormir!": this.estadoDeEspirito = "bravo";
@@ -129,17 +112,18 @@ public class Cachorro extends Animal {//Classe filha
            break;
        }
        return this.estadoDeEspirito;
+       //String e enum(pesquisar "O que é?"
+       //Pesquisar sobre DEBUG
     }  
-//Método toString(escolhe um campo p validar como único ( no caso aqui, o NOME)
-    //Deixa o endereço de memória legível
-    //tomar cuidado p escolher uma variável única 
-    //Pesquisar sobre DEBUG
     
-    //Método Override toString: / deixar o endereço de memória + legível para os humanos
-    
-    @Override //(ligado a herança)
-    public String toString() {
+    @Override //Método Override:
+    public String toString() { //Método Override toString: / deixar o endereço de memória + legível para os humanos / escolher uma variável única / escolhe um campo p validar como único ( no caso aqui, o NOME)
         return "Cachorro{" + "nome=" + nome + '}';
     }
+   
+     @Override // herdei o método da classe pai e estou alterando para as caracteristicas da classe filha (cachorro) /(ligado a herança)
+     public void soar(){
+         System.out.println("AU AU");
+     }
         
 }

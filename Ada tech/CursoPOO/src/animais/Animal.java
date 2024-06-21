@@ -18,9 +18,10 @@ public class Animal { //Classe pai
     protected double peso;
     protected String estadoDeEspirito; 
     
-    ////Constructor (selecionar todos)
-
+    //Constructor (selecionar todos) / sempre entre os atributos e os métodos / constructor = oq executa a construção do seu objeto
+        //public Animal(){} //construtor default/padrão, vazio
     public Animal(String nome, String cor, int altura, double peso, String estadoDeEspirito) {
+        //pega a info x que está aqui no construtor e passa para a x que está nos atributos
         this.nome = nome;
         this.cor = cor;
         this.altura = altura;
@@ -40,8 +41,8 @@ public class Animal { //Classe pai
        //assinatura
        //método público, não tem retorno, se chama "comer", não recebe variável nenhuma 
     }
-    protected void soar(){
+    public void soar(){
         //Método que só imprime algo
-        System.out.println("");
+        System.out.println("CRI CRI");
     }
 }
