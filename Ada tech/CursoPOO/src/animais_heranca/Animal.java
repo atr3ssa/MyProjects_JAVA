@@ -8,7 +8,7 @@ package animais_heranca;
                                     //    Qualquer classe filha pacote diferente = public, protected
                                     //    Qualquer classe em pacote diferente = public
 
-//Classe abstrata = não pode criar um objeto a partir dela (IMPORTANTE)
+//Classe abstrata = não pode criar um objeto a partir dela (IMPORTANTE) / só descrevem o que podem ter / necessário especificar classes filhas (cao, gato), para criar objetos (caes e gatos)
 public abstract class Animal { //Classe pai / classe criada p explicar herança
     //atributos em comum entre todos os animais / atributos = caracteristicas do objeto
     
@@ -96,8 +96,8 @@ public abstract class Animal { //Classe pai / classe criada p explicar herança
        //assinatura
        //método público, não tem retorno, se chama "comer", não recebe variável nenhuma 
     }
-    public void soar(){
+    public abstract void soar(); // abstract = significa que cada animal terá que especificar o som
         //Método que só imprime algo
-        System.out.println("CRI CRI");
-    }
+        //System.out.println("CRI CRI");
+    //}
 }
