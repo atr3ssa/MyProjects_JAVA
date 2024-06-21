@@ -2,31 +2,11 @@
 package animais;
 
 
-public class Cachorro {
-    //atributos
-        //atributos = caracteristicas do objeto
-    
-        //definir atributos do cachorro, caracteristicas dele
-        //classe em java
-   
-    //encapsulamento (encapsular o seu objeto de forma segura)
-        //Quais são os modificadores de acesso:
-            //    a partir da mesma classe = public, protected, default, private
-            //    Qualquer classe no mesmo pacote = public, protected, default
-            //    Qualquer classe filha no mesmo pacote = public, protected, default
-            //    Qualquer classe filha pacote diferente = public, protected
-            //    Qualquer classe em pacote diferente = public
-    
-     //Como encapsular os objetos? atributos private
-        
+public class Cachorro extends Animal {
+    //Atributos estão sendo herdados da classe animal
     static int numeroDeCachorros; //Variável estática = única p cada classe
-    private String nome;   
-    private String cor;
-    private int altura;
-    private double peso;
-    private int tamanhoDoRabo;
-    private String estadoDeEspirito;
-    
+    private int tamanhoDoRabo;//atributo só do cachorro
+   
     //Construtores sempre entre os atributos e os métodos
         //Construtores ( oq executa a construção do seu objeto)
     
@@ -117,25 +97,15 @@ public class Cachorro {
     
     
     //Métodos:
-        //Métodos = interagir com objeto/ações (objeto executa a ação)
-        //Método que não faz nada
-    public void comer (){
-        //assinatura
-        //método público, não tem retorno, se chama "comer", não recebe variável nenhuma e não faz nada
-        
-    }
-    //Método que só imprime algo
-    public void soar (){
-        System.out.println("Au au");
-    }
-    //Método que retorna algo
+
     public String pegar(){
+        //Método que retorna algo
         //agr o método terá retorno
         return "bolinha";
         //tem que por "retorno" e algo com o mesmo tipo do método;   
     }
-    //método que recebe e retorna
     public String interagir (String acao){
+        //método que recebe e retorna
         //validação
        /*if(acao.equals("carinho")){
            this.estadoDeEspirito = "feliz";
