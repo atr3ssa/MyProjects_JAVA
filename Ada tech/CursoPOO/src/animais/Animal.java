@@ -7,27 +7,40 @@ package animais;
                                     //    Qualquer classe filha no mesmo pacote = public, protected, default
                                     //    Qualquer classe filha pacote diferente = public, protected
                                     //    Qualquer classe em pacote diferente = public
-public class Animal {
+
+public class Animal { //Classe pai
     //classe criada p explicar herança
-    
     //atributos em comum entre todos os animais / atributos = caracteristicas do objeto
-    //encapsulamento(private) / encapsular o seu objeto de forma segura
-    private String nome;
-    private String cor;
-    private int altura;
-    private double peso;
-    private String estadoDeEspirito; 
+        //encapsulamento / encapsular o seu objeto de forma segura
+    protected String nome; //private = só mesma classe acessa, como quero que os filhos acessem será PROTECTED
+    protected String cor;
+    protected int altura;
+    protected double peso;
+    protected String estadoDeEspirito; 
+    
+    ////Constructor (selecionar todos)
+
+    public Animal(String nome, String cor, int altura, double peso, String estadoDeEspirito) {
+        this.nome = nome;
+        this.cor = cor;
+        this.altura = altura;
+        this.peso = peso;
+        this.estadoDeEspirito = estadoDeEspirito;
+    }
+    
     
     //métodos que todos os animais tem / método = interagir com objeto/ações (objeto executa a ação)
-     public void comer(){
+     protected void comer(){
        //Método que não faz nada
        //assinatura
-       //método público, não tem retorno, se chama "comer", não recebe variável nenhuma e não faz nada
+       //método público, não tem retorno, se chama "comer", não recebe variável nenhuma
     }
-    public void dormir(){
-        
+    protected void dormir(){
+       //Método que não faz nada
+       //assinatura
+       //método público, não tem retorno, se chama "comer", não recebe variável nenhuma 
     }
-    public void soar(){
+    protected void soar(){
         //Método que só imprime algo
         System.out.println("");
     }

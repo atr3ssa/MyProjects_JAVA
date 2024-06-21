@@ -2,17 +2,14 @@
 package animais;
 
 
-public class Cachorro extends Animal {
+public class Cachorro extends Animal {//Classe filha
     //Atributos estão sendo herdados da classe animal
     static int numeroDeCachorros; //Variável estática = única p cada classe
     private int tamanhoDoRabo;//atributo só do cachorro
-   
-    //Construtores sempre entre os atributos e os métodos
-        //Construtores ( oq executa a construção do seu objeto)
-    
-    //Construtor
+
+    //Construtor (sempre entre os atributos e os métodos) / Construtores = oq executa a construção do seu objeto
     public Cachorro(){} //construtor default/padrão, vazio
-    public Cachorro(String nome, String cor, int altura, double peso, int tamanhoDoRabo, String estadoDeEspirito) {
+    public Cachorro( int tamanhoDoRabo) {
         this.nome = nome;
         this.cor = cor;
         this.altura = altura;
@@ -138,7 +135,7 @@ public class Cachorro extends Animal {
     //tomar cuidado p escolher uma variável única 
     //Pesquisar sobre DEBUG
     
-    //Método Override:
+    //Método Override toString: / deixar o endereço de memória + legível para os humanos
     
     @Override //(ligado a herança)
     public String toString() {
