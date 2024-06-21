@@ -2,6 +2,6 @@
 package lojas;
 
 
-public class PetShop {
+public class PetShop { //polimorfismo
     
 }

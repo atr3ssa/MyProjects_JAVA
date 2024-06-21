@@ -16,49 +16,9 @@ public class Cachorro extends Animal {//Classe filha
         super(nome, cor, altura, peso, estadoDeEspirito);//constructor que bate com o constructor do pai (super) /ele envia as infos daqui
     }
     
-   //Métodos getters(pegar) e setters(coloca)
-    
-    public String getNome() {
-        //pega a variavel nome
-        return nome;
-        //retorne nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-        //não tem retorno
-        //ex com validação
-//        if(nome.equals("lily")){
-//          this.nome = nome;  
-//        }
-    }
-
-    public String getCor() {
-        return cor;
-    }
-
-    public void setCor(String cor) {
-        this.cor = cor;
-        //recebe a cor daqui e guarda na cor lá de cima
-    }
-
-    public int getAltura() {
-        return altura;
-    }
-
-    public void setAltura(int altura) {
-        this.altura = altura;
-    }
-
-    public double getPeso() {
-        return peso;
-    }
-
-    public void setPeso(double peso) {
-        this.peso = peso;
-    }
-
-    public int getTamanhoDoRabo() {
+   //Métodos getters(pegar) e setters(coloca) / herdados do pai
+   
+    public int getTamanhoDoRabo() {//pertence só a cachorro
         return tamanhoDoRabo;
     }
 
@@ -66,18 +26,7 @@ public class Cachorro extends Animal {//Classe filha
         this.tamanhoDoRabo = tamanhoDoRabo;
     }
 
-    public String getEstadoDeEspirito() {
-        return estadoDeEspirito;
-    }
-
-    public void setEstadoDeEspirito(String estadoDeEspirito) {
-        this.estadoDeEspirito = estadoDeEspirito;
-    }
-    
-    
-    //Métodos estão sendo herdados da classe animal
-    
-    //Métodos apenas da classe Cachorro
+    //Métodos estão sendo herdados da classe animal / aqui = Métodos apenas da classe Cachorro
 
     public String pegar(){//Método que retorna algo
         return "bolinha";
