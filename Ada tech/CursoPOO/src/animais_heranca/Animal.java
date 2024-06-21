@@ -8,7 +8,8 @@ package animais_heranca;
                                     //    Qualquer classe filha pacote diferente = public, protected
                                     //    Qualquer classe em pacote diferente = public
 
-public class Animal { //Classe pai / classe criada p explicar herança
+//Classe abstrata = não pode criar um objeto a partir dela (IMPORTANTE)
+public abstract class Animal { //Classe pai / classe criada p explicar herança
     //atributos em comum entre todos os animais / atributos = caracteristicas do objeto
     
         //encapsulamento / encapsular o seu objeto de forma segura

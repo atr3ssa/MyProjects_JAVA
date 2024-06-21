@@ -5,6 +5,7 @@ package main;
 import animais_heranca.Cachorro;
 import animais_heranca.Gato;
 import animais_heranca.Passaro;
+import lojas.PetShop;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,27 +13,46 @@ public class Main {
         //variavel de referencia ( referencia um objeto) / cria objeto na memória
         
             //objetos / EX1: Cachorro cachorro0 = new Cachorro(); //Construtor padrão (zerado)
+            
+          Cachorro cachorro1 = new Cachorro("Puppy","marrom", 25 , 5.5, 5 , "paz");//define a classe construída, coloca o nome da variavel de refencia para o objeto = cria um novo objeto Cachorro;
         
-          Cachorro cachorro1 = new Cachorro("Puppy","marrom", 25 , 5.5, 5 , "paz");
-        
-          Gato gato1 = new Gato("Mel","branco", 15, 4.5, "paz");
-          
+          Gato /*Classe de referencia*/ gato1 = new Gato/* Classe verdadeira */("Mel","branco", 15, 4.5, "paz");
+                //todo gato é um animal, mas nem todo animal é um gato = polimorfismo
+                //ex: Animal gato2 = new animal(); ERRADO, pq mesmo que TODO ANIMAL É UM  ANIMAL, a classe animal(pai) é abstrata, então não pode criar objetos
+                //ex2: Animal gato2 = new Gato (); OK, pq TODO GATO É UM ANIMAL
+                //ex3: Gato gato2 = new Animal(); ERRADO, pq NEM TODO ANIMAL É UM GATO
+                
           Passaro passaro1 = new Passaro("Dori", "Amarelo", 9, 2.3, "paz");
-            //define a classe construída, coloca o nome da variavel de refencia para o objeto = cria um novo objeto Cachorro;
-
-          cachorro1.soar();//chamar método / variavel de referencia do objeto . método(); / P/ realizar uma ação
+            
+          PetShop petshop = new PetShop();
+          
+          //polimorfismo = capacidade de um objeto de poder ser referenciado de várias formas
+          
+          //Gato (métodos)
           gato1.soar();
+          petshop.banho(gato1);
+            System.out.println("O gato está " + gato1.getEstadoDeEspirito());
+          
+          //Passaro (métodos)
           passaro1.soar();
+          
+          //Cachorro (métodos)
+          cachorro1.soar();//chamar método / variavel de referencia do objeto . método(); / P/ realizar uma ação
+          petshop.banho(cachorro1);
+            System.out.println("O cachorro está " + cachorro1.getEstadoDeEspirito());
+          petshop.tosar(cachorro1);
+            System.out.println("O cachorro está " + cachorro1.getEstadoDeEspirito());
+          
+           
+          //cachorro1.pegar(); /dessa forma, não aparece o que foi retornado. P/ aparecer é necessário usar um System out, como abaixo:
+          System.out.println("O cachorro pegou a " + cachorro1.pegar()); // Pegar
+        
+          System.out.println("O cachorro está " + cachorro1.interagir("vai dormir!"));// Interagir
+          System.out.println("O cachorro está " + cachorro1.interagir("carinho"));
+          System.out.println("O cachorro está " + cachorro1.interagir("nada"));
+          System.out.println("O cachorro está " + cachorro1.interagir("pisar na patinha"));
+         
 
-        //Métodos apenas para Cachorros:
-        
-        //cachorro1.pegar(); /dessa forma, não aparece o que foi retornado. P/ aparecer é necessário usar um System out, como abaixo:
-        System.out.println("O cachorro pegou a " + cachorro1.pegar()); // Pegar
-        
-        System.out.println("O cachorro está " + cachorro1.interagir("vai dormir!"));// Interagir
-        System.out.println("O cachorro está " + cachorro1.interagir("carinho"));
-        System.out.println("O cachorro está " + cachorro1.interagir("nada"));
-        System.out.println("O cachorro está " + cachorro1.interagir("pisar na patinha"));
         
         //ANOTAÇÕES:
                     //colocar as variaveis cachorro
