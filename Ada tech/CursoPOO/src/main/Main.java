@@ -1,4 +1,6 @@
-package heranca;
+package main;
+
+
 //Classes importadas de outro pacote
 import animais_heranca.Cachorro;
 import animais_heranca.Gato;
