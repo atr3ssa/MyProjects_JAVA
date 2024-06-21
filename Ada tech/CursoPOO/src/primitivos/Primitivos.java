@@ -23,9 +23,9 @@ public class Primitivos {
         //8 bits
         byte variavelByte =-127;
         // short = 16 bits (-32768 - 32767)
-        // char = igual o short, mas só aceita os positivos (0 - 65535)
-        // int = 4 bytes (32 bits) = o mais usado (-2b - 2b)
-        // long = 8 bytes (64 bits) (-9t - 9t)
+        // char = igual o short, mas só aceita os positivos (0 - 65535) = ""
+        // int = 4 bytes (32 bits) = o mais usado (-2b - 2b) = 0
+        // long = 8 bytes (64 bits) (-9t - 9t) = 0
         int variavelInt = 2147483;
         
         System.out.println(variavelInt);

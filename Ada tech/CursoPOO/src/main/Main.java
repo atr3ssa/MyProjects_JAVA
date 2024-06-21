@@ -70,5 +70,16 @@ public class Main {
                                 //System.out.println(cachorro1.toString());
                                 //System.out.println(cachorro2.toString());
 
+                 
+               //Curiosidades:
+                    //valor default de qualquer objeto é null;
+                    //posso substiyuir o . por _
+                    //aclopamento = quando uma classe depende de outra = herança
+                    // estudar herança X acoplamento
+                        double d = 1.0d;// tem que por o d ou o f, para mostrar que é um double ou float;
+                        float f = 2.0f;
+
+                        float x = (float)d + f; // Casting = por somar floats, e ter um double, tive que falar para o java confiar que o double pode ser somado como um float, ai funcionou
+                            System.out.println(x);
     }
 }
