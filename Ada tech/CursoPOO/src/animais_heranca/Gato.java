@@ -1,5 +1,5 @@
 
-package animais;
+package animais_heranca;
 
 
 public class Gato extends Animal {

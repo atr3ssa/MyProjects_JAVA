@@ -1,5 +1,5 @@
 
-package animais;
+package animais_heranca;
 
             //Quais são os modificadores de acesso:
                                     //    a partir da mesma classe = public, protected, default, private

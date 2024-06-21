@@ -1,5 +1,5 @@
 
-package animais;
+package animais_heranca;
 
 
 public class Passaro extends Animal{//herança (passaro é uma classe filha da classe animais)

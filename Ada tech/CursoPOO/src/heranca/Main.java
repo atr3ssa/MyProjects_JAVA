@@ -1,10 +1,10 @@
-package cursopoo;
+package heranca;
 //Classes importadas de outro pacote
-import animais.Cachorro;
-import animais.Gato;
-import animais.Passaro;
+import animais_heranca.Cachorro;
+import animais_heranca.Gato;
+import animais_heranca.Passaro;
 
-public class Classes {
+public class Main {
     public static void main(String[] args) {
         //Classe define o que é o objeto(caracteristicas, comportamentos) / classe diferente de objeto
         //variavel de referencia ( referencia um objeto) / cria objeto na memória
