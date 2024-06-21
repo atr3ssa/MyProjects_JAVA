@@ -18,8 +18,8 @@ public class Cachorro {
             //    Qualquer classe em pacote diferente = public
     
      //Como encapsular os objetos? atributos private
-        //Variável estática = única p cada classe
-    static int numeroDeCachorros;
+        
+    static int numeroDeCachorros; //Variável estática = única p cada classe
     private String nome;   
     private String cor;
     private int altura;
@@ -124,7 +124,7 @@ public class Cachorro {
         
     }
     //Método que só imprime algo
-    public void latir (){
+    public void soar (){
         System.out.println("Au au");
     }
     //Método que retorna algo
@@ -166,6 +166,8 @@ public class Cachorro {
     //Deixa o endereço de memória legível
     //tomar cuidado p escolher uma variável única 
     //Pesquisar sobre DEBUG
+    
+    //Método Override:
     
     @Override //(ligado a herança)
     public String toString() {

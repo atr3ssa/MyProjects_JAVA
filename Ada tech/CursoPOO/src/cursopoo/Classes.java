@@ -1,4 +1,6 @@
-package animais;
+package cursopoo;
+
+import animais.Cachorro;
 
 public class Classes {
     public static void main(String[] args) {
@@ -60,7 +62,7 @@ public class Classes {
 
         //P/ realizar uma ação
             //variavel de referencia do objeto . método =
-        cachorro1.latir(); 
+        cachorro1.soar(); 
         //cachorro1.pegar(); 
             //dessa forma, não aparece o que foi retornado. P/ aparecer é necessário usar um System out, como abaixo:
         System.out.println("O cachorro pegou a " + cachorro1.pegar());
