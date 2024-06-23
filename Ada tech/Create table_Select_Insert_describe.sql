@@ -71,6 +71,9 @@ delete from disciplina
 where id_disciplina=3;
 
 -- criar views
+		-- não cria outra tabela, apenas uma visualização da tabela
+		-- o dado está sempre refletido na visualização
+		-- não ocupa 2 vezes memória
 create view disciplina_com_sigilo as
 (
 select
@@ -78,6 +81,8 @@ id_disciplina,
 ementa
 from disciplina
 );
+
+select* from disciplina_com_sigilo;
 
 
 
