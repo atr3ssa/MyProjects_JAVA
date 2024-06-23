@@ -34,6 +34,8 @@ references disciplina (id_disciplina)
 -- descrever tabela X
 describe disciplina;
 
+-- 3 formas de inserir arquivo: 1 de cada vez, em conjunto, ou importar csv
+
 -- add dados na tabela X
 insert into disciplina values (1, 'português', 'literatura e gramática');
 
@@ -45,6 +47,7 @@ select * from disciplina;
 Use escola; -- usar banco de dados = escola
 
 -- buscar e tentar resolver isso (como importar um arquivo csv)
+
 LOAD DATA LOCAL INFILE 'C:\ProgramData\MySQL\MySQL Server 8.0\Uploads\teste.csv'
 into table disciplina -- inserir na tabela disciplina
 FIELDS TERMINATED BY ',' -- reconhecer o delimitador ","
