@@ -60,6 +60,25 @@ IGNORE 1 rows; -- ignorar a 1° linha (identificadores)
 show variables like "secure_file_priv"; -- achar o caminho para a pasta my de configurações e p uploads
 SET GLOBAL local_infile = 'ON'; -- deixar o local_infile GLOBAL
 
+-- USAR SEMPRE O WHERE, DO CONTRÁRIO, IRA EDITAR OU EXCLUIR TODA A TABELA
+
+-- editar
+update disciplina set ementa= 'algebra linear e algoritmo'
+where id_disciplina= 2;
+
+-- deletar
+delete from disciplina
+where id_disciplina=3;
+
+-- criar views
+create view disciplina_com_sigilo as
+(
+select
+id_disciplina,
+ementa
+from disciplina
+);
+
 
 
 
