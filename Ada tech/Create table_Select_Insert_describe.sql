@@ -70,10 +70,13 @@ where id_disciplina= 2;
 delete from disciplina
 where id_disciplina=3;
 
--- criar views
-		-- não cria outra tabela, apenas uma visualização da tabela
-		-- o dado está sempre refletido na visualização
-		-- não ocupa 2 vezes memória
+-- Formas de manter a segurança
+		-- Permissionamento, gerenciar quem tem acesso a tabelas e planilhas com dados sensíveis
+		-- e
+		-- criar views
+				-- não cria outra tabela, apenas uma visualização da tabela (todos terão acesso as views, enquanto o dado sigiloso estará protegido)
+				-- o dado está sempre refletido na visualização
+				-- não ocupa 2 vezes memória
 create view disciplina_com_sigilo as
 (
 select
@@ -83,6 +86,20 @@ from disciplina
 );
 
 select* from disciplina_com_sigilo;
+
+-- indices = estratégia p otimizar a busca
+	-- árvore binária
+-- criar index (implementar em tabelas grandes, pois otimiza a busca, desde que seja uma tabela p busca, caso insira muitos dados e com frequência, ´provavelmente não vai valer a pena)
+ create index idx_nome on disciplina(nome);
+ 
+select * from disciplina
+where nome='matematica';
+
+
+
+
+
+
 
 
 
