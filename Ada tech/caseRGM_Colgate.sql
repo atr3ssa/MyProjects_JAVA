@@ -113,8 +113,8 @@ JOIN sales_ s ON p.SKU_p = s.SKU_s
 GROUP BY p.SKU_p;
 
 -- listar o valor total de vendas de cada categoria durante todo o período e ordenar a lista decrescente pelo valor total
-SELECT p.Categorie, s.Date, SUM(s.Sales_Amount) AS Total_Category_Sales
-FROM products_ p
-JOIN sales_ s ON p.SKU_p = s.SKU_s
-GROUP BY p.Categorie, s.Date
-ORDER BY Total_Category_Sales DESC;
+SELECT p.Categorie, s.Date, SUM(s.Sales_Amount) AS Total_Category_Sales -- Select = selecionar a coluna Categorie da tabela products_ (usando o alias p.), SUM = soma os valores da coluna s.Sales_Amount e nomeia como Total_Category_Sales
+FROM products_ p -- indica de qual tabela os dados estão sendo tirados
+JOIN sales_ s ON p.SKU_p = s.SKU_s -- JOIN = Junção de tabelas, ON = indica que haverá uma junção das linhas da tabela products_ com as da tabela sales_, por meio de uma coluna em comum que é a SKU
+GROUP BY p.Categorie, s.Date -- agrupa os resultados pela coluna Categorie da tabela products_ e pela coluna date da tabela sales_
+ORDER BY Total_Category_Sales DESC; -- Order = ordenar os resultados de uma consulta, desc = Especifica que a ordenação deve ser em ordem decrescente
