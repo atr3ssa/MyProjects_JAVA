@@ -1,3 +1,5 @@
+-- SQL criado para amostra de resolução de case_RGM da Colgate
+
 -- create database testeColgate; -- criar base de dados
 use testeColgate; -- utilizar base de dados
 
