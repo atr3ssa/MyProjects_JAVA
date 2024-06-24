@@ -43,6 +43,10 @@ insert into products_ values (1001, "Creme Dental Colgate Total12 90G", "Creme D
 -- mostrar todos os dados dentro da tabela products_
 select* from products_;
 
+-- alterar tabela products_
+update products_ set Categorie= 'Enxaguante Bucal'
+where SKU_p= 1005;
+
 -- inserir dados na tabela sales_
 INSERT INTO sales_ (Sales_ID, SKU_s, Sales_Amount, Date)
 VALUES
