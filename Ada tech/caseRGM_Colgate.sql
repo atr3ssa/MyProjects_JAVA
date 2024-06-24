@@ -118,3 +118,12 @@ FROM products_ p -- indica de qual tabela os dados estão sendo tirados
 JOIN sales_ s ON p.SKU_p = s.SKU_s -- JOIN = Junção de tabelas, ON = indica que haverá uma junção das linhas da tabela products_ com as da tabela sales_, por meio de uma coluna em comum que é a SKU
 GROUP BY p.Categorie, s.Date -- agrupa os resultados pela coluna Categorie da tabela products_ e pela coluna date da tabela sales_
 ORDER BY Total_Category_Sales DESC; -- Order = ordenar os resultados de uma consulta, desc = Especifica que a ordenação deve ser em ordem decrescente
+
+-- 
+SELECT p.Categorie, SUM(s.Sales_Amount) AS Total_Category_Sales 
+FROM products_ p 
+JOIN sales_ s ON p.SKU_p = s.SKU_s 
+GROUP BY p.Categorie 
+ORDER BY Total_Category_Sales DESC; 
+
+
