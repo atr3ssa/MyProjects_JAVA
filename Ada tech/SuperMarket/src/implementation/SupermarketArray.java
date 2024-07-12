@@ -26,12 +26,33 @@ public class SupermarketArray implements Supermarket{
 
     @Override
     public void print() {
+        System.out.println("###################################################");
+            if(LastIndex < 0){
+                System.out.println("Lista Vazia");  
+            }
+            for(int i = 0; i <= LastIndex; i++){ // laço for ( ponteiro(i) = 0; enquanto i for menor ou igual a LastIndex; acrescente +1
+                System.out.println(i + " - " + itens[i]);
+            }
+            
+        System.out.println("###################################################");
        
     }
 
     @Override
     public void delete(int index) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        if(index >= 0 && index <= LastIndex){
+          shift(index);
+          LastIndex--;
+        } else {
+            System.err.println("Índice Inválido " + index);
+        }
     }
+
+    private void shift(int index) {
+        for(int i = index; i < LastIndex; i++){
+          itens[i] = itens[i+1];  
+        }
+    }
+    
     
 }
