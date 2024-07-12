@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {//classe executável
-        Scanner scanner = new Scanner (System.in); 
-        int opcao;
+        Scanner scanner = new Scanner (System.in); // Classe para receber dados do usuário
+        int opcao; //variável onde as respostas serão armazenadas
         do{
             System.out.println("\n Lista de Compras");
             System.out.println("1 - Inserir");
