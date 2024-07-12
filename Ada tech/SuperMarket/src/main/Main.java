@@ -42,7 +42,7 @@ public class Main {
                     System.out.println("saindo do programa...");
                     break;
                 default:
-                    System.out.println("Opção inváida, por favor, digite novamente");
+                    System.err.println("Opção inváida, por favor, digite novamente");
             }     
         } while (opcao != 4); // enquanto o número digitado for diferente de 4, o menu vai seguir em looping
     
