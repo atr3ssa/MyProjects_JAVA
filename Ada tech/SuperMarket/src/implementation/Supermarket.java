@@ -7,7 +7,7 @@ public interface Supermarket {
     //Métodos:
     void add(final String item); //p add item na lista
     
-    void print(); // p mostrar os itens da lista
+    void print(); // p imprimir os itens da lista
     
     void delete(final int index); // p deletar item da lista
 }
