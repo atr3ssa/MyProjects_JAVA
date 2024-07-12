@@ -7,10 +7,10 @@ public class SupermarketArray implements Supermarket{
     
     private int LastIndex;
     
-    //inicializar item com o construtor:
+    //inicializar vetor com o construtor:
     public SupermarketArray(int Size) {
         itens = new String[Size];
-        
+        LastIndex = -1; //indicar o último elemento inserido // -1 pq não há último elemento  
     }
 
     
