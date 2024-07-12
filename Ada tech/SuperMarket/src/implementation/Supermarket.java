@@ -1,13 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+//pacote
 package implementation;
 
-/**
- *
- * @author DreEm
- */
-public class Supermarket {
+public interface Supermarket {
+  //ficrão os métodos p implementação
     
+    //Métodos:
+    void add(final String item); //p add item na lista
+    
+    void print(); // p mostrar os itens da lista
+    
+    void delete(final int index); // p deletar item da lista
 }
