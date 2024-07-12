@@ -3,14 +3,18 @@ package main;
 
 //importações
 import implementation.Supermarket;
+import implementation.SupermarketArray;
 import java.util.Scanner;
 
 public class Main {
-    private static int SIZE = 3;
+    
+    private final static int SIZE = 3;
+    
     public static void main(String[] args) {//classe executável
         Scanner scanner = new Scanner (System.in); // Classe para receber dados do usuário
+        Supermarket supermarket = new SupermarketArray (SIZE); // constante
         int opcao; //variável onde as respostas serão armazenadas
-        Supermarket supermarket = Supermarketarray(SIZE); // constante
+        
         do{ //laço do while
             System.out.println("\n Lista de Compras");
             System.out.println("1 - Inserir");
@@ -40,10 +44,14 @@ public class Main {
                 default:
                     System.out.println("Opção inváida, por favor, digite novamente");
             }     
-        } while (!= 4);
+        } while (opcao != 4); // enquanto o número digitado for diferente de 4, o menu vai seguir em looping
     
-        
-        scanner.close();
+        scanner.close(); //finalizar
         
     }
+
+    
+
+
+   
 }
