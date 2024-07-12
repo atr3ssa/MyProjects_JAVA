@@ -7,6 +7,13 @@ import implementation.SupermarketArray;
 import java.util.Scanner;
 
 public class Main {
+    //Estrutura de dados = forma específica de armazenar dados
+    // TAD = Tipos abstratos de dados
+        // LISTA LIGADA = semelhnate a um vetor (tamanho infinito e alocado de forma dinamica
+        // PILHAS = estrutura de dados de uma extremidade (inserir e remover pela extremidade), linear
+        // FILAS = O 1° que chegou é atendido e removido, linear, dupla extremidade
+        // Arvore = não é linear, profundidade, complexidade
+        
     
     private final static int SIZE = 3;
     
